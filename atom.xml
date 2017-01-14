@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-12T02:08:42.720Z</updated>
+  <updated>2017-01-14T05:57:54.939Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,49 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>css命名</title>
+    <link href="http://yoursite.com/2017/01/14/css-name/"/>
+    <id>http://yoursite.com/2017/01/14/css-name/</id>
+    <published>2017-01-14T05:57:04.000Z</published>
+    <updated>2017-01-14T05:57:54.939Z</updated>
+    
+    <content type="html"><![CDATA[<p>头：header<br>内容：content/container　　<br>尾：footer　　<br>导航：nav　　<br>侧栏：sidebar　　<br>栏目：column　　<br>页面外围控制整体佈局宽度：wrapper　　<br>左右中：left right center　　<br>登录条：loginbar　　<br>标志：logo　　<br>广告：banner　　<br>页面主体：main　　<br>热点：hot　　<br>新闻：news　　<br>下载：download　　<br>子导航：subnav　　<br>菜单：menu　　<br>子菜单：submenu　　<br>搜索：search　　<br>友情链接：friendlink　　<br>页脚：footer　　<br>版权：copyright　　<br>滚动：scroll　　<br>内容：content　　<br>标签：tags　　<br>文章列表：list　　<br>提示信息：msg　　<br>小技巧：tips　　<br>栏目标题：title　　<br>加入：joinus　　<br>指南：guide　　<br>服务：service　　<br>注册：regsiter　　<br>状态：status　　<br>投票：vote　　<br>合作伙伴：partner　　<br>导航：nav　　<br>主导航：mainnav　　<br>子导航：subnav　　<br>顶导航：topnav　　<br>边导航：sidebar　　<br>左导航：leftsidebar　　<br>右导航：rightsidebar　　<br>菜单：menu　　<br>子菜单：submenu　　<br>标题: title　　<br>摘要: summary</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;头：header&lt;br&gt;内容：content/container　　&lt;br&gt;尾：footer　　&lt;br&gt;导航：nav　　&lt;br&gt;侧栏：sidebar　　&lt;br&gt;栏目：column　　&lt;br&gt;页面外围控制整体佈局宽度：wrapper　　&lt;br&gt;左右中：left right c
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JSON.parse 和 JSON.stringify</title>
+    <link href="http://yoursite.com/2017/01/14/JSON/"/>
+    <id>http://yoursite.com/2017/01/14/JSON/</id>
+    <published>2017-01-14T02:15:12.000Z</published>
+    <updated>2017-01-14T02:21:08.527Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-parse用于从一个字符串中解析出json对象-如"><a href="#1-parse用于从一个字符串中解析出json对象-如" class="headerlink" title="1.parse用于从一个字符串中解析出json对象,如"></a>1.parse用于从一个字符串中解析出json对象,如</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'&#123;"name":"huangxiaojian","age":"23"&#125;'</span></div></pre></td></tr></table></figure>
+<p>结果：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">JSON</span>.parse(str)</div><div class="line"></div><div class="line"><span class="built_in">Object</span></div><div class="line"></div><div class="line">age: <span class="string">"23"</span></div><div class="line">name: <span class="string">"huangxiaojian"</span></div><div class="line">__proto__: <span class="built_in">Object</span></div></pre></td></tr></table></figure>
+<p>注意：单引号写在{}外，每个属性名都必须用双引号，否则会抛出异常。</p>
+<h3 id="2-stringify-用于从一个对象解析出字符串，如"><a href="#2-stringify-用于从一个对象解析出字符串，如" class="headerlink" title="2.stringify()用于从一个对象解析出字符串，如"></a>2.stringify()用于从一个对象解析出字符串，如</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = &#123;<span class="attr">a</span>:<span class="number">1</span>,<span class="attr">b</span>:<span class="number">2</span>&#125;</div></pre></td></tr></table></figure>
+<p>结果：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">JSON</span>.stringify(a)</div><div class="line"></div><div class="line"><span class="string">"&#123;"</span>a<span class="string">":1,"</span>b<span class="string">":2&#125;"</span></div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-parse用于从一个字符串中解析出json对象-如&quot;&gt;&lt;a href=&quot;#1-parse用于从一个字符串中解析出json对象-如&quot; class=&quot;headerlink&quot; title=&quot;1.parse用于从一个字符串中解析出json对象,如&quot;&gt;&lt;/a&gt;1.par
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

@@ -45,100 +45,7 @@
     <p>头：header<br>内容：content/container　　<br>尾：footer　　<br>导航：nav　　<br>侧栏：sidebar　　<br>栏目：column　　<br>页面外围控制整体佈局宽度：wrapper　　<br>左右中：left right center　　<br>登录条：loginbar　　<br>标志：logo　　<br>广告：banner　　<br>页面主体：main　　<br>热点：hot　　<br>新闻：news　　<br>下载：download　　<br>子导航：subnav　　<br>菜单：menu　　<br>子菜单：submenu　　<br>搜索：search　　<br>友情链接：friendlink　　<br>页脚：footer　　<br>版权：copyright　　<br>滚动：scroll　　<br>内容：content　　<br>标签：tags　　<br>文章列表：list　　<br>提示信息：msg　　<br>小技巧：tips　　<br>栏目标题：title　　<br>加入：joinus　　<br>指南：guide　　<br>服务：service　　<br>注册：regsiter　　<br>状态：status　　<br>投票：vote　　<br>合作伙伴：partner　　<br>导航：nav　　<br>主导航：mainnav　　<br>子导航：subnav　　<br>顶导航：topnav　　<br>边导航：sidebar　　<br>左导航：leftsidebar　　<br>右导航：rightsidebar　　<br>菜单：menu　　<br>子菜单：submenu　　<br>标题: title　　<br>摘要: summary</p>
 
   </section>
-
-	  
-  <!-- css -->
-  <link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
-  <style type="text/css">
-      .center {
-          text-align: center;
-      }
-      .hidden {
-          display: none;
-      }
-    .donate_bar a.btn_donate{
-      display: inline-block;
-      width: 82px;
-      height: 82px;
-      background: url("http://7xsl28.com1.z0.glb.clouddn.com/btn_reward.gif") no-repeat;
-      _background: url("http://7xsl28.com1.z0.glb.clouddn.com/btn_reward.gif") no-repeat;
-
-    }
-
-    .donate_bar a.btn_donate:hover{ background-position: 0px -82px;}
-    .donate_bar .donate_txt {
-      display: block;
-      color: #9d9d9d;
-      font: 14px/2 "Microsoft Yahei";
-    }
-    .bold{ font-weight: bold; }
-  </style>
-  <!-- /css -->
-
-    <!-- Donate Module -->
-    <div id="donate_module">
-
-  <!-- btn_donate & tips -->
-  <div id="donate_board" class="donate_bar center">
-      <br>
-      ------------------------------------------------------------------------------------------------------------------------------
-      <br>
-    <a id="btn_donate" class="btn_donate" target="_self" href="javascript:;" title="Donate 打赏"></a>
-    <span class="donate_txt">
-      Enjoy it ? Donate me !  欣赏此文？求鼓励，求支持！
-    </span>
-      
-    
-  </div>
-  <!-- /btn_donate & tips -->
-
-  <!-- donate guide -->
-    
-  <div id="donate_guide" class="donate_bar center hidden">
-        <br>
-      ------------------------------------------------------------------------------------------------------------------------------
-      <br>
-
-    <a href="/images/wechatImage.jpg" title="用微信扫一扫哦~" class="fancybox" rel="article0">
-      <img src="/images/wechatImage.jpg" title="微信打赏 cry101" height="190px" width="auto"/>
-    </a>
-        
-          
-
-    <a href="/images/alipayImage.jpg" title="用支付宝扫一扫即可~" class="fancybox" rel="article0">
-      <img src="/images/alipayImage.jpg" title="支付宝打赏 cry101" height="190px" width="auto"/>
-    </a>
-
-    <span class="donate_txt">
-      Enjoy it ? Donate me !  欣赏此文？求鼓励，求支持！
-    </span>
-
-  </div>
-  <!-- /donate guide -->
-
-  <!-- donate script -->
-  <script src="/js/jquery.min.js"></script>
-  <script>
-    jQuery.browser={};(function(){jQuery.browser.msie=false; jQuery.browser.version=0;if(navigator.userAgent.match(/MSIE ([0-9]+)./)){ jQuery.browser.msie=true;jQuery.browser.version=RegExp.$1;}})();
-  </script>
-  <script src="/plugin/fancybox/jquery.fancybox.js"></script>
-
-  <script type="text/javascript">
-    document.getElementById('btn_donate').onclick = function() {
-    	//document.getElementById('donate_board').className = 'donate_bar center hidden'
-      //document.getElementById('donate_guide').className = 'donate_bar center'
-      $('#donate_board').addClass('hidden');
-      $('#donate_guide').removeClass('hidden');
-      $("a.fancybox").fancybox();
-    }
-
-
-    
-  </script>
-  <!-- /donate script -->
-</div>
-<!-- /Donate Module -->
-   
+  
 </article>
 
   <div class="sharing grid">
@@ -151,8 +58,63 @@
   </section>
 
   <section class="share-btns">
-    <!-- <p> share it if you like it~ </p> -->
-    
+      
+  <!-- css -->
+  <link rel="stylesheet" href="/css/style.css">
+  <div class="donateBox">
+    <div id="DonateText" class="tr3">Donate</div>
+    <ul id="donateBox" class="list pos-f tr3">
+      <li id="AliPay">AliPay</li>
+      <li id="WeChat">WeChat</li>
+    </ul>
+    <div id="QRBox" class="pos-f left-100">
+      <div id="MainBox"></div>
+    </div>
+  </div>
+  <!-- donate script -->
+  <script src="/js/jquery.min.js"></script>
+  <script>
+ jQuery(document).ready(function() {
+  var QRBox = $('#QRBox');
+  var MainBox = $('#MainBox');
+  // 二维码路径
+  var AliPayQR  = '/images/alipayImage.jpg';
+  var WeChanQR  = '/images/wechatImage.jpg';
+
+
+  function showQR(QR) {
+    if (QR) {
+      MainBox.css('background-image','url('+QR+')');
+    }
+    $('#DonateText,#donateBox,#github').addClass('blur');
+    QRBox.fadeIn(300,function(argument) {
+      MainBox.addClass('showQR');
+    });
+  }
+
+  $('#donateBox>li').click(function(event) {
+    var thisID  = $(this).attr('id');
+    if (thisID === 'AliPay') {
+      showQR(AliPayQR);
+    } else if (thisID === 'WeChat') {
+      showQR(WeChanQR);
+    }
+  });
+
+  MainBox.click(function(event) {
+    MainBox.removeClass('showQR').addClass('hideQR');
+    setTimeout (function(a) {
+      QRBox.fadeOut(300,function(argument) {
+        MainBox.removeClass('hideQR');
+      });
+      $('#DonateText,#donateBox,#github').removeClass('blur');
+    },600);
+
+  });
+});
+  </script>
+
+
   </section>
 </div>
 

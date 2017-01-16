@@ -1,28 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>关于时间的JS | cry101</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/app.css">
+  <!-- <link rel='stylesheet' href='http://fonts.useso.com/css?family=Source+Code+Pro'> -->
   
-  <link href="/atom.xml" rel="self"/>
+</head>
+
+<body>
+  <nav class="app-nav">
   
-  <link href="http://yoursite.com/"/>
-  <updated>2017-01-16T09:56:11.998Z</updated>
-  <id>http://yoursite.com/</id>
-  
-  <author>
-    <name>John Doe</name>
     
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>关于时间的JS</title>
-    <link href="http://yoursite.com/2017/01/16/time/"/>
-    <id>http://yoursite.com/2017/01/16/time/</id>
-    <published>2017-01-16T09:52:20.000Z</published>
-    <updated>2017-01-16T09:56:11.998Z</updated>
+      <a href="/.">home</a>
     
-    <content type="html"><![CDATA[<p>时间函数加减 2015-10-23<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">addByTransDate</span>(<span class="params">dateParameter, num</span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> translateDate = <span class="string">""</span>, dateString = <span class="string">""</span>, monthString = <span class="string">""</span>, dayString = <span class="string">""</span>;</div><div class="line">        translateDate = dateParameter.replace(<span class="string">"-"</span>, <span class="string">"/"</span>).replace(<span class="string">"-"</span>, <span class="string">"/"</span>);</div><div class="line">        <span class="keyword">var</span> newDate = <span class="keyword">new</span> <span class="built_in">Date</span>(translateDate);</div><div class="line">        newDate = newDate.valueOf();</div><div class="line">        newDate = newDate + num * <span class="number">24</span> * <span class="number">60</span> * <span class="number">60</span> * <span class="number">1000</span>;</div><div class="line">        newDate = <span class="keyword">new</span> <span class="built_in">Date</span>(newDate);</div><div class="line">        <span class="comment">//如果月份长度少于2，则前加 0 补位</span></div><div class="line">        <span class="keyword">if</span> ((newDate.getMonth() + <span class="number">1</span>).toString().length == <span class="number">1</span>) &#123;</div><div class="line">            monthString = <span class="number">0</span> + <span class="string">""</span> + (newDate.getMonth() + <span class="number">1</span>).toString();</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            monthString = (newDate.getMonth() + <span class="number">1</span>).toString();</div><div class="line">        &#125;</div><div class="line">        <span class="comment">//如果天数长度少于2，则前加 0 补位</span></div><div class="line">        <span class="keyword">if</span> (newDate.getDate().toString().length == <span class="number">1</span>) &#123;</div><div class="line">            dayString = <span class="number">0</span> + <span class="string">""</span> + newDate.getDate().toString();</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            dayString = newDate.getDate().toString();</div><div class="line">        &#125;</div><div class="line">        dateString = newDate.getFullYear() + <span class="string">"-"</span> + monthString + <span class="string">"-"</span> + dayString;</div><div class="line">        <span class="keyword">return</span> dateString;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">reduceByTransDate</span>(<span class="params">dateParameter, num</span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> translateDate = <span class="string">""</span>, dateString = <span class="string">""</span>, monthString = <span class="string">""</span>, dayString = <span class="string">""</span>;</div><div class="line">        translateDate = dateParameter.replace(<span class="string">"-"</span>, <span class="string">"/"</span>).replace(<span class="string">"-"</span>, <span class="string">"/"</span>);</div><div class="line">        <span class="keyword">var</span> newDate = <span class="keyword">new</span> <span class="built_in">Date</span>(translateDate);</div><div class="line">        newDate = newDate.valueOf();</div><div class="line">        newDate = newDate - num * <span class="number">24</span> * <span class="number">60</span> * <span class="number">60</span> * <span class="number">1000</span>;</div><div class="line">        newDate = <span class="keyword">new</span> <span class="built_in">Date</span>(newDate);</div><div class="line">        <span class="comment">//如果月份长度少于2，则前加 0 补位</span></div><div class="line">        <span class="keyword">if</span> ((newDate.getMonth() + <span class="number">1</span>).toString().length == <span class="number">1</span>) &#123;</div><div class="line">            monthString = <span class="number">0</span> + <span class="string">""</span> + (newDate.getMonth() + <span class="number">1</span>).toString();</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            monthString = (newDate.getMonth() + <span class="number">1</span>).toString();</div><div class="line">        &#125;</div><div class="line">        <span class="comment">//如果天数长度少于2，则前加 0 补位</span></div><div class="line">        <span class="keyword">if</span> (newDate.getDate().toString().length == <span class="number">1</span>) &#123;</div><div class="line">            dayString = <span class="number">0</span> + <span class="string">""</span> + newDate.getDate().toString();</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            dayString = newDate.getDate().toString();</div><div class="line">        &#125;</div><div class="line">        dateString = newDate.getFullYear() + <span class="string">"-"</span> + monthString + <span class="string">"-"</span> + dayString;</div><div class="line">        <span class="keyword">return</span> dateString;</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
+  
+    
+      <a href="/archives">archive</a>
+    
+  
+    
+      <a href="/about">about</a>
+    
+  
+    
+      <a href="/atom.xml">rss</a>
+    
+  
+</nav>
+
+  <main class="post">
+  <article>
+  <h1 class="article-title">
+    <a href="/2017/01/16/time/">关于时间的JS</a>
+  </h1>
+
+  <section class="article-meta">
+    <p class="article-date">一月 16 2017</p>
+  </section>
+
+  <section class="article-entry">
+    <p>时间函数加减 2015-10-23<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">addByTransDate</span>(<span class="params">dateParameter, num</span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> translateDate = <span class="string">""</span>, dateString = <span class="string">""</span>, monthString = <span class="string">""</span>, dayString = <span class="string">""</span>;</div><div class="line">        translateDate = dateParameter.replace(<span class="string">"-"</span>, <span class="string">"/"</span>).replace(<span class="string">"-"</span>, <span class="string">"/"</span>);</div><div class="line">        <span class="keyword">var</span> newDate = <span class="keyword">new</span> <span class="built_in">Date</span>(translateDate);</div><div class="line">        newDate = newDate.valueOf();</div><div class="line">        newDate = newDate + num * <span class="number">24</span> * <span class="number">60</span> * <span class="number">60</span> * <span class="number">1000</span>;</div><div class="line">        newDate = <span class="keyword">new</span> <span class="built_in">Date</span>(newDate);</div><div class="line">        <span class="comment">//如果月份长度少于2，则前加 0 补位</span></div><div class="line">        <span class="keyword">if</span> ((newDate.getMonth() + <span class="number">1</span>).toString().length == <span class="number">1</span>) &#123;</div><div class="line">            monthString = <span class="number">0</span> + <span class="string">""</span> + (newDate.getMonth() + <span class="number">1</span>).toString();</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            monthString = (newDate.getMonth() + <span class="number">1</span>).toString();</div><div class="line">        &#125;</div><div class="line">        <span class="comment">//如果天数长度少于2，则前加 0 补位</span></div><div class="line">        <span class="keyword">if</span> (newDate.getDate().toString().length == <span class="number">1</span>) &#123;</div><div class="line">            dayString = <span class="number">0</span> + <span class="string">""</span> + newDate.getDate().toString();</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            dayString = newDate.getDate().toString();</div><div class="line">        &#125;</div><div class="line">        dateString = newDate.getFullYear() + <span class="string">"-"</span> + monthString + <span class="string">"-"</span> + dayString;</div><div class="line">        <span class="keyword">return</span> dateString;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">reduceByTransDate</span>(<span class="params">dateParameter, num</span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> translateDate = <span class="string">""</span>, dateString = <span class="string">""</span>, monthString = <span class="string">""</span>, dayString = <span class="string">""</span>;</div><div class="line">        translateDate = dateParameter.replace(<span class="string">"-"</span>, <span class="string">"/"</span>).replace(<span class="string">"-"</span>, <span class="string">"/"</span>);</div><div class="line">        <span class="keyword">var</span> newDate = <span class="keyword">new</span> <span class="built_in">Date</span>(translateDate);</div><div class="line">        newDate = newDate.valueOf();</div><div class="line">        newDate = newDate - num * <span class="number">24</span> * <span class="number">60</span> * <span class="number">60</span> * <span class="number">1000</span>;</div><div class="line">        newDate = <span class="keyword">new</span> <span class="built_in">Date</span>(newDate);</div><div class="line">        <span class="comment">//如果月份长度少于2，则前加 0 补位</span></div><div class="line">        <span class="keyword">if</span> ((newDate.getMonth() + <span class="number">1</span>).toString().length == <span class="number">1</span>) &#123;</div><div class="line">            monthString = <span class="number">0</span> + <span class="string">""</span> + (newDate.getMonth() + <span class="number">1</span>).toString();</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            monthString = (newDate.getMonth() + <span class="number">1</span>).toString();</div><div class="line">        &#125;</div><div class="line">        <span class="comment">//如果天数长度少于2，则前加 0 补位</span></div><div class="line">        <span class="keyword">if</span> (newDate.getDate().toString().length == <span class="number">1</span>) &#123;</div><div class="line">            dayString = <span class="number">0</span> + <span class="string">""</span> + newDate.getDate().toString();</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            dayString = newDate.getDate().toString();</div><div class="line">        &#125;</div><div class="line">        dateString = newDate.getFullYear() + <span class="string">"-"</span> + monthString + <span class="string">"-"</span> + dayString;</div><div class="line">        <span class="keyword">return</span> dateString;</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
 <p><a href="http://www.cnblogs.com/carekee/articles/1678041.html" target="_blank" rel="external">http://www.cnblogs.com/carekee/articles/1678041.html</a><br>Js获取当前日期时间及其它操作</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> myDate = <span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line">myDate.getYear();        <span class="comment">//获取当前年份(2位)</span></div><div class="line">myDate.getFullYear();    <span class="comment">//获取完整的年份(4位,1970-????)</span></div><div class="line">myDate.getMonth();       <span class="comment">//获取当前月份(0-11,0代表1月)</span></div><div class="line">myDate.getDate();        <span class="comment">//获取当前日(1-31)</span></div><div class="line">myDate.getDay();         <span class="comment">//获取当前星期X(0-6,0代表星期天)</span></div><div class="line">myDate.getTime();        <span class="comment">//获取当前时间(从1970.1.1开始的毫秒数)</span></div><div class="line">myDate.getHours();       <span class="comment">//获取当前小时数(0-23)</span></div><div class="line">myDate.getMinutes();     <span class="comment">//获取当前分钟数(0-59)</span></div><div class="line">myDate.getSeconds();     <span class="comment">//获取当前秒数(0-59)</span></div><div class="line">myDate.getMilliseconds();    <span class="comment">//获取当前毫秒数(0-999)</span></div><div class="line">myDate.toLocaleDateString();     <span class="comment">//获取当前日期</span></div><div class="line"><span class="keyword">var</span> mytime=myDate.toLocaleTimeString();     <span class="comment">//获取当前时间</span></div><div class="line">myDate.toLocaleString( );        <span class="comment">//获取日期与时间</span></div></pre></td></tr></table></figure>
 <p>日期时间脚本库方法列表<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Date</span>.prototype.isLeapYear 判断闰年</div><div class="line"><span class="built_in">Date</span>.prototype.Format 日期格式化</div><div class="line"><span class="built_in">Date</span>.prototype.DateAdd 日期计算</div><div class="line"><span class="built_in">Date</span>.prototype.DateDiff 比较日期差</div><div class="line"><span class="built_in">Date</span>.prototype.toString 日期转字符串</div><div class="line"><span class="built_in">Date</span>.prototype.toArray 日期分割为数组</div><div class="line"><span class="built_in">Date</span>.prototype.DatePart 取日期的部分信息</div><div class="line"><span class="built_in">Date</span>.prototype.MaxDayOfDate 取日期所在月的最大天数</div><div class="line"><span class="built_in">Date</span>.prototype.WeekNumOfYear 判断日期所在年的第几周</div><div class="line">StringToDate 字符串转日期型</div><div class="line">IsValidDate 验证日期有效性</div><div class="line">CheckDateTime 完整日期时间检查</div><div class="line">daysBetween 日期天数差</div></pre></td></tr></table></figure></p>
@@ -38,84 +58,106 @@
 <p>//+—————————————————<br>//| 取得当前日期所在周是一年中的第几周<br>//+—————————————————<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Date</span>.prototype.WeekNumOfYear = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)  </span></div><div class="line">&#123;   </div><div class="line">    <span class="keyword">var</span> myDate = <span class="keyword">this</span>;  </div><div class="line">    <span class="keyword">var</span> ary = myDate.toArray();  </div><div class="line">    <span class="keyword">var</span> year = ary[<span class="number">0</span>];  </div><div class="line">    <span class="keyword">var</span> month = ary[<span class="number">1</span>]+<span class="number">1</span>;  </div><div class="line">    <span class="keyword">var</span> day = ary[<span class="number">2</span>];  </div><div class="line">    <span class="built_in">document</span>.write(<span class="string">'&lt; script language=VBScript\&gt; \n'</span>);  </div><div class="line">    <span class="built_in">document</span>.write(<span class="string">'myDate = Datue('</span><span class="string">'+month+'</span>-<span class="string">'+day+'</span>-<span class="string">'+year+'</span><span class="string">') \n'</span>);  </div><div class="line">    <span class="built_in">document</span>.write(<span class="string">'result = DatePart('</span>ww<span class="string">', myDate) \n'</span>);  </div><div class="line">    <span class="built_in">document</span>.write(<span class="string">' \n'</span>);  </div><div class="line">    <span class="keyword">return</span> result;  </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>//+—————————————————<br>//| 字符串转成日期类型<br>//| 格式 MM/dd/YYYY MM-dd-YYYY YYYY/MM/dd YYYY-MM-dd<br>//+—————————————————<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">StringToDate</span>(<span class="params">DateStr</span>)  </span></div><div class="line">&#123;   </div><div class="line">  </div><div class="line">    <span class="keyword">var</span> converted = <span class="built_in">Date</span>.parse(DateStr);  </div><div class="line">    <span class="keyword">var</span> myDate = <span class="keyword">new</span> <span class="built_in">Date</span>(converted);  </div><div class="line">    <span class="keyword">if</span> (<span class="built_in">isNaN</span>(myDate))  </div><div class="line">    &#123;   </div><div class="line">        <span class="comment">//var delimCahar = DateStr.indexOf('/')!=-1?'/':'-';  </span></div><div class="line">        <span class="keyword">var</span> arys= DateStr.split(<span class="string">'-'</span>);  </div><div class="line">        myDate = <span class="keyword">new</span> <span class="built_in">Date</span>(arys[<span class="number">0</span>],--arys[<span class="number">1</span>],arys[<span class="number">2</span>]);  </div><div class="line">    &#125;  </div><div class="line">    <span class="keyword">return</span> myDate;  </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>若要显示:当前日期加时间(如:2009-06-12 12:00)</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">CurentTime</span>(<span class="params"></span>)</span></div><div class="line">    &#123; </div><div class="line">        <span class="keyword">var</span> now = <span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line">       </div><div class="line">        <span class="keyword">var</span> year = now.getFullYear();       <span class="comment">//年</span></div><div class="line">        <span class="keyword">var</span> month = now.getMonth() + <span class="number">1</span>;     <span class="comment">//月</span></div><div class="line">        <span class="keyword">var</span> day = now.getDate();            <span class="comment">//日</span></div><div class="line">       </div><div class="line">        <span class="keyword">var</span> hh = now.getHours();            <span class="comment">//时</span></div><div class="line">        <span class="keyword">var</span> mm = now.getMinutes();          <span class="comment">//分</span></div><div class="line">       </div><div class="line">        <span class="keyword">var</span> clock = year + <span class="string">"-"</span>;</div><div class="line">       </div><div class="line">        <span class="keyword">if</span>(month &lt; <span class="number">10</span>)</div><div class="line">            clock += <span class="string">"0"</span>;</div><div class="line">       </div><div class="line">        clock += month + <span class="string">"-"</span>;</div><div class="line">       </div><div class="line">        <span class="keyword">if</span>(day &lt; <span class="number">10</span>)</div><div class="line">            clock += <span class="string">"0"</span>;</div><div class="line">           </div><div class="line">        clock += day + <span class="string">" "</span>;</div><div class="line">       </div><div class="line">        <span class="keyword">if</span>(hh &lt; <span class="number">10</span>)</div><div class="line">            clock += <span class="string">"0"</span>;</div><div class="line">           </div><div class="line">        clock += hh + <span class="string">":"</span>;</div><div class="line">        <span class="keyword">if</span> (mm &lt; <span class="number">10</span>) clock += <span class="string">'0'</span>; </div><div class="line">        clock += mm; </div><div class="line">        <span class="keyword">return</span>(clock); </div><div class="line">    &#125;</div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;时间函数加减 2015-10-23&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2
-    
-    </summary>
-    
-    
-  </entry>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">CurentTime</span>(<span class="params"></span>)</span></div><div class="line">    &#123; </div><div class="line">        <span class="keyword">var</span> now = <span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line">       </div><div class="line">        <span class="keyword">var</span> year = now.getFullYear();       <span class="comment">//年</span></div><div class="line">        <span class="keyword">var</span> month = now.getMonth() + <span class="number">1</span>;     <span class="comment">//月</span></div><div class="line">        <span class="keyword">var</span> day = now.getDate();            <span class="comment">//日</span></div><div class="line">       </div><div class="line">        <span class="keyword">var</span> hh = now.getHours();            <span class="comment">//时</span></div><div class="line">        <span class="keyword">var</span> mm = now.getMinutes();          <span class="comment">//分</span></div><div class="line">       </div><div class="line">        <span class="keyword">var</span> clock = year + <span class="string">"-"</span>;</div><div class="line">       </div><div class="line">        <span class="keyword">if</span>(month &lt; <span class="number">10</span>)</div><div class="line">            clock += <span class="string">"0"</span>;</div><div class="line">       </div><div class="line">        clock += month + <span class="string">"-"</span>;</div><div class="line">       </div><div class="line">        <span class="keyword">if</span>(day &lt; <span class="number">10</span>)</div><div class="line">            clock += <span class="string">"0"</span>;</div><div class="line">           </div><div class="line">        clock += day + <span class="string">" "</span>;</div><div class="line">       </div><div class="line">        <span class="keyword">if</span>(hh &lt; <span class="number">10</span>)</div><div class="line">            clock += <span class="string">"0"</span>;</div><div class="line">           </div><div class="line">        clock += hh + <span class="string">":"</span>;</div><div class="line">        <span class="keyword">if</span> (mm &lt; <span class="number">10</span>) clock += <span class="string">'0'</span>; </div><div class="line">        clock += mm; </div><div class="line">        <span class="keyword">return</span>(clock); </div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+  </section>
   
-  <entry>
-    <title>css命名</title>
-    <link href="http://yoursite.com/2017/01/14/css-name/"/>
-    <id>http://yoursite.com/2017/01/14/css-name/</id>
-    <published>2017-01-14T05:57:04.000Z</published>
-    <updated>2017-01-16T09:48:48.936Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line">头：header</div><div class="line">内容：content/container　　</div><div class="line">尾：footer　　</div><div class="line">导航：nav　　</div><div class="line">侧栏：sidebar　　</div><div class="line">栏目：column　　</div><div class="line">页面外围控制整体佈局宽度：wrapper　　</div><div class="line">左右中：left right center　　</div><div class="line">登录条：loginbar　　</div><div class="line">标志：logo　　</div><div class="line">广告：banner　　</div><div class="line">页面主体：main　　</div><div class="line">热点：hot　　</div><div class="line">新闻：news　　</div><div class="line">下载：download　　</div><div class="line">子导航：subnav　　</div><div class="line">菜单：menu　　</div><div class="line">子菜单：submenu　　</div><div class="line">搜索：search　　</div><div class="line">友情链接：friendlink　　</div><div class="line">页脚：footer　　</div><div class="line">版权：copyright　　</div><div class="line">滚动：scroll　　</div><div class="line">内容：content　　</div><div class="line">标签：tags　　</div><div class="line">文章列表：list　　</div><div class="line">提示信息：msg　　</div><div class="line">小技巧：tips　　</div><div class="line">栏目标题：title　　</div><div class="line">加入：joinus　　</div><div class="line">指南：guide　　</div><div class="line">服务：service　　</div><div class="line">注册：regsiter　　</div><div class="line">状态：status　　</div><div class="line">投票：vote　　</div><div class="line">合作伙伴：partner　　</div><div class="line">导航：nav　　</div><div class="line">主导航：mainnav　　</div><div class="line">子导航：subnav　　</div><div class="line">顶导航：topnav　　</div><div class="line">边导航：sidebar　　</div><div class="line">左导航：leftsidebar　　</div><div class="line">右导航：rightsidebar　　</div><div class="line">菜单：menu　　</div><div class="line">子菜单：submenu　　</div><div class="line">标题: title　　</div><div class="line">摘要: summary</div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div
-    
-    </summary>
-    
-    
-  </entry>
+</article>
+
+  <div class="sharing grid">
+  <section class="profile grid-item grid">
+    <img class="avatar" src="/images/avatar.png" alt="avatar" />
+    <div class="grid-item">
+      <p class="title"> cry101 </p>
+      <p class="subtitle"> You Are The JavaScript In My HTML </p>
+    <div>
+  </section>
+
+  <section class="share-btns">
+      
+  <!-- css -->
+  <link rel="stylesheet" href="/css/style.css">
+  <div class="donateBox">
+    <div id="DonateText" class="tr3">Donate</div>
+    <ul id="donateBox" class="list pos-f tr3">
+      <li id="AliPay">AliPay</li>
+      <li id="WeChat">WeChat</li>
+    </ul>
+    <div id="QRBox" class="pos-f left-100">
+      <div id="MainBox"></div>
+    </div>
+  </div>
+  <!-- donate script -->
+  <script src="/js/jquery.min.js"></script>
+  <script>
+ jQuery(document).ready(function() {
+  var QRBox = $('#QRBox');
+  var MainBox = $('#MainBox');
+  // 二维码路径
+  var AliPayQR  = '/images/alipayImage.jpg';
+  var WeChanQR  = '/images/wechatImage.jpg';
+
+
+  function showQR(QR) {
+    if (QR) {
+      MainBox.css('background-image','url('+QR+')');
+    }
+    $('#DonateText,#donateBox,#github').addClass('blur');
+    QRBox.fadeIn(300,function(argument) {
+      MainBox.addClass('showQR');
+    });
+  }
+
+  $('#donateBox>li').click(function(event) {
+    var thisID  = $(this).attr('id');
+    if (thisID === 'AliPay') {
+      showQR(AliPayQR);
+    } else if (thisID === 'WeChat') {
+      showQR(WeChanQR);
+    }
+  });
+
+  MainBox.click(function(event) {
+    MainBox.removeClass('showQR').addClass('hideQR');
+    setTimeout (function(a) {
+      QRBox.fadeOut(300,function(argument) {
+        MainBox.removeClass('hideQR');
+      });
+      $('#DonateText,#donateBox,#github').removeClass('blur');
+    },600);
+
+  });
+});
+  </script>
+
+
+  </section>
+</div>
+
+
   
-  <entry>
-    <title>JSON.parse 和 JSON.stringify</title>
-    <link href="http://yoursite.com/2017/01/14/JSON/"/>
-    <id>http://yoursite.com/2017/01/14/JSON/</id>
-    <published>2017-01-14T02:15:12.000Z</published>
-    <updated>2017-01-14T02:21:08.527Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="1-parse用于从一个字符串中解析出json对象-如"><a href="#1-parse用于从一个字符串中解析出json对象-如" class="headerlink" title="1.parse用于从一个字符串中解析出json对象,如"></a>1.parse用于从一个字符串中解析出json对象,如</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'&#123;"name":"huangxiaojian","age":"23"&#125;'</span></div></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">JSON</span>.parse(str)</div><div class="line"></div><div class="line"><span class="built_in">Object</span></div><div class="line"></div><div class="line">age: <span class="string">"23"</span></div><div class="line">name: <span class="string">"huangxiaojian"</span></div><div class="line">__proto__: <span class="built_in">Object</span></div></pre></td></tr></table></figure>
-<p>注意：单引号写在{}外，每个属性名都必须用双引号，否则会抛出异常。</p>
-<h3 id="2-stringify-用于从一个对象解析出字符串，如"><a href="#2-stringify-用于从一个对象解析出字符串，如" class="headerlink" title="2.stringify()用于从一个对象解析出字符串，如"></a>2.stringify()用于从一个对象解析出字符串，如</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = &#123;<span class="attr">a</span>:<span class="number">1</span>,<span class="attr">b</span>:<span class="number">2</span>&#125;</div></pre></td></tr></table></figure>
-<p>结果：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">JSON</span>.stringify(a)</div><div class="line"></div><div class="line"><span class="string">"&#123;"</span>a<span class="string">":1,"</span>b<span class="string">":2&#125;"</span></div></pre></td></tr></table></figure></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;1-parse用于从一个字符串中解析出json对象-如&quot;&gt;&lt;a href=&quot;#1-parse用于从一个字符串中解析出json对象-如&quot; class=&quot;headerlink&quot; title=&quot;1.parse用于从一个字符串中解析出json对象,如&quot;&gt;&lt;/a&gt;1.par
-    
-    </summary>
-    
-    
-  </entry>
+<section id="comment">  
+ <!-- 多说评论框 start -->  
+<div class="ds-thread" data-thread-key="2017/01/16/time/" data-title="关于时间的JS" data-url="http://itbirds1900.github.io/http://yoursite.com/2017/01/16/time/"></div>  
+<!-- 多说评论框 end -->  
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->  
+<script type="text/javascript">  
+    var duoshuoQuery = {short_name:"itmyhome1900"};  
+        (function() {  
+            var ds = document.createElement('script');  
+            ds.type = 'text/javascript';ds.async = true;  
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';  
+            ds.charset = 'UTF-8';  
+            (document.getElementsByTagName('head')[0]   
+             || document.getElementsByTagName('body')[0]).appendChild(ds);  
+        })();  
+</script>  
+<!-- 多说公共JS代码 end -->  
+</section>
+
+
   
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2017/01/12/hello-world/"/>
-    <id>http://yoursite.com/2017/01/12/hello-world/</id>
-    <published>2017-01-12T02:08:42.698Z</published>
-    <updated>2017-01-12T02:08:42.720Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-    
-    </summary>
-    
-    
-  </entry>
-  
-</feed>
+</main>
+
+</body>
+</html>

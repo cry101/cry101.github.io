@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-14T10:04:41.313Z</updated>
+  <updated>2017-02-14T10:23:54.576Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,25 +20,35 @@
     <link href="http://yoursite.com/2017/02/14/qumanhua/"/>
     <id>http://yoursite.com/2017/02/14/qumanhua/</id>
     <published>2017-02-14T09:29:47.000Z</published>
-    <updated>2017-02-14T10:04:41.313Z</updated>
+    <updated>2017-02-14T10:23:54.576Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="趣漫画app项目"><a href="#趣漫画app项目" class="headerlink" title="趣漫画app项目"></a>趣漫画app项目</h1><hr>
+    <content type="html"><![CDATA[<h2 id="趣漫画app项目"><a href="#趣漫画app项目" class="headerlink" title="趣漫画app项目"></a>趣漫画app项目</h2><hr>
 <p>完成时间：2016.11 - 2016.12<br>核心技术：apicloud,jquery,Aui,vue,artTemplate</p>
 <hr>
-<h3 id="贴一些图好了"><a href="#贴一些图好了" class="headerlink" title="贴一些图好了"></a>贴一些图好了</h3><h2 id=""><a href="#" class="headerlink" title=""></a><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/1.PNG" alt="图片"></h2><h2 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/2.PNG" alt="图片"></h2><h2 id="-2"><a href="#-2" class="headerlink" title=""></a><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/3.PNG" alt="图片"></h2><h2 id="-3"><a href="#-3" class="headerlink" title=""></a><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/4.PNG" alt="图片"></h2><h2 id="-4"><a href="#-4" class="headerlink" title=""></a><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/7.PNG" alt="图片"></h2><h2 id="-5"><a href="#-5" class="headerlink" title=""></a><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/8.PNG" alt="图片"></h2><ul>
-<li>下拉刷新，上拉加载，模板渲染，ajax等等</li>
-<li>其他一些头像上传，拍照上传只是调用apicloud的接口，就没贴图了</li>
-</ul>
+<h2 id="贴一些图好了"><a href="#贴一些图好了" class="headerlink" title="贴一些图好了"></a>贴一些图好了</h2><h3 id="首页，模板渲染，ajax等等："><a href="#首页，模板渲染，ajax等等：" class="headerlink" title="首页，模板渲染，ajax等等："></a>首页，模板渲染，ajax等等：</h3><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/1.PNG" alt="图片"></p>
+<h3 id="下拉刷新："><a href="#下拉刷新：" class="headerlink" title="下拉刷新："></a>下拉刷新：</h3><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/2.PNG" alt="图片"></p>
+<h3 id="上拉加载："><a href="#上拉加载：" class="headerlink" title="上拉加载："></a>上拉加载：</h3><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/3.PNG" alt="图片"></p>
+<h3 id="分类："><a href="#分类：" class="headerlink" title="分类："></a>分类：</h3><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/4.PNG" alt="图片"></p>
+<h3 id="最近更新："><a href="#最近更新：" class="headerlink" title="最近更新："></a>最近更新：</h3><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/7.PNG" alt="图片"></p>
+<h3 id="热门排行："><a href="#热门排行：" class="headerlink" title="热门排行："></a>热门排行：</h3><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/8.PNG" alt="图片"></p>
+<h3 id="其他一些头像上传，拍照上传只是调用apicloud的接口，就没贴图了"><a href="#其他一些头像上传，拍照上传只是调用apicloud的接口，就没贴图了" class="headerlink" title="其他一些头像上传，拍照上传只是调用apicloud的接口，就没贴图了"></a>其他一些头像上传，拍照上传只是调用apicloud的接口，就没贴图了</h3><hr>
+<h3 id="历史记录-localstorage-："><a href="#历史记录-localstorage-：" class="headerlink" title="历史记录(localstorage)："></a>历史记录(localstorage)：</h3><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/5.PNG" alt="图片"></p>
+<h3 id="登陆注册"><a href="#登陆注册" class="headerlink" title="登陆注册:"></a>登陆注册:</h3><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/6.PNG" alt="图片"></p>
 <hr>
-<h2 id="-6"><a href="#-6" class="headerlink" title=""></a><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/5.PNG" alt="图片"></h2><h2 id="-7"><a href="#-7" class="headerlink" title=""></a><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/6.PNG" alt="图片"></h2><h2 id="登陆注册，历史记录，localstorage"><a href="#登陆注册，历史记录，localstorage" class="headerlink" title="*登陆注册，历史记录，localstorage"></a>*登陆注册，历史记录，localstorage</h2><h2 id="-8"><a href="#-8" class="headerlink" title=""></a><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/9.PNG" alt="图片"></h2><h2 id="漫画分集，正序逆序，vue状态实现"><a href="#漫画分集，正序逆序，vue状态实现" class="headerlink" title="*漫画分集，正序逆序，vue状态实现"></a>*漫画分集，正序逆序，vue状态实现</h2><h2 id="-9"><a href="#-9" class="headerlink" title=""></a><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/10.PNG" alt="图片"></h2><h2 id="-10"><a href="#-10" class="headerlink" title=""></a><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/11.PNG" alt="图片"></h2><h2 id="-11"><a href="#-11" class="headerlink" title=""></a><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/12.PNG" alt="图片"></h2><h2 id="简易的漫画阅读器。。"><a href="#简易的漫画阅读器。。" class="headerlink" title="* 简易的漫画阅读器。。"></a>* 简易的漫画阅读器。。</h2><h2 id="-12"><a href="#-12" class="headerlink" title=""></a><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/13.PNG" alt="图片"></h2><h2 id="搜索功能"><a href="#搜索功能" class="headerlink" title="*搜索功能"></a>*搜索功能</h2><hr>
-<h1 id="动漫君app项目"><a href="#动漫君app项目" class="headerlink" title="动漫君app项目"></a>动漫君app项目</h1><hr>
-<p>由于公司业务需要另改一个，核心功能一样，就是换套UI，简单贴几个图好了</p>
-<h2 id="-13"><a href="#-13" class="headerlink" title=""></a><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dongmanjun/1.PNG" alt="图片"></h2><h2 id="-14"><a href="#-14" class="headerlink" title=""></a><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dongmanjun/2.PNG" alt="图片"></h2><h2 id="-15"><a href="#-15" class="headerlink" title=""></a><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dongmanjun/3.PNG" alt="图片"></h2><h2 id="-16"><a href="#-16" class="headerlink" title=""></a><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dongmanjun/4.PNG" alt="图片"></h2><h2 id="-17"><a href="#-17" class="headerlink" title=""></a><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dongmanjun/5.PNG" alt="图片"></h2><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dongmanjun/6.PNG" alt="图片"></p>
+<h3 id="漫画分集，正序逆序，vue状态实现"><a href="#漫画分集，正序逆序，vue状态实现" class="headerlink" title="漫画分集，正序逆序，vue状态实现:"></a>漫画分集，正序逆序，vue状态实现:</h3><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/9.PNG" alt="图片"></p>
+<hr>
+<h3 id="简易的漫画阅读器-swiper"><a href="#简易的漫画阅读器-swiper" class="headerlink" title="简易的漫画阅读器(swiper):"></a>简易的漫画阅读器(swiper):</h3><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/10.PNG" alt="图片"></p>
+<h3 id="提示"><a href="#提示" class="headerlink" title="提示:"></a>提示:</h3><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/11.PNG" alt="图片"></p>
+<h3 id="分集"><a href="#分集" class="headerlink" title="分集:"></a>分集:</h3><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/12.PNG" alt="图片"></p>
+<hr>
+<h3 id="搜索功能"><a href="#搜索功能" class="headerlink" title="搜索功能:"></a>搜索功能:</h3><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/qumanhua/13.PNG" alt="图片"></p>
+<h2 id="——"><a href="#——" class="headerlink" title="——"></a>——</h2><h1 id="动漫君app项目"><a href="#动漫君app项目" class="headerlink" title="动漫君app项目"></a>动漫君app项目</h1><hr>
+<p>由于公司业务需要另改一个，核心功能一样，就是换套UI，简单贴几个图好了<br><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dongmanjun/1.PNG" alt="图片"><br><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dongmanjun/2.PNG" alt="图片"><br><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dongmanjun/3.PNG" alt="图片"><br><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dongmanjun/4.PNG" alt="图片"><br><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dongmanjun/5.PNG" alt="图片"><br><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dongmanjun/6.PNG" alt="图片"></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;趣漫画app项目&quot;&gt;&lt;a href=&quot;#趣漫画app项目&quot; class=&quot;headerlink&quot; title=&quot;趣漫画app项目&quot;&gt;&lt;/a&gt;趣漫画app项目&lt;/h1&gt;&lt;hr&gt;
+      &lt;h2 id=&quot;趣漫画app项目&quot;&gt;&lt;a href=&quot;#趣漫画app项目&quot; class=&quot;headerlink&quot; title=&quot;趣漫画app项目&quot;&gt;&lt;/a&gt;趣漫画app项目&lt;/h2&gt;&lt;hr&gt;
 &lt;p&gt;完成时间：2016.11 - 2016.12&lt;br&gt;核心技术：apicloud,j
     
     </summary>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ajax的一些小技巧 | cry101</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/app.css">
+  <!-- <link rel='stylesheet' href='http://fonts.useso.com/css?family=Source+Code+Pro'> -->
+  
+</head>
+
+<body>
+  <nav class="app-nav">
+  
+    
+      <a href="/.">home</a>
+    
+  
+    
+      <a href="/archives">archive</a>
+    
+  
+    
+      <a href="/about">about</a>
+    
+  
+    
+      <a href="/atom.xml">rss</a>
+    
+  
+</nav>
+
+  <main class="post">
+  <article>
+  <h1 class="article-title">
+    <a href="/2017/02/16/ajax/">ajax的一些小技巧</a>
+  </h1>
+
+  <section class="article-meta">
+    <p class="article-date">二月 16 2017</p>
+  </section>
+
+  <section class="article-entry">
+    <h3 id="1-利用html5-formData实现ajax上传文件"><a href="#1-利用html5-formData实现ajax上传文件" class="headerlink" title="1.利用html5 formData实现ajax上传文件"></a>1.利用html5 formData实现ajax上传文件</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"coverbg"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">form</span> <span class="attr">id</span>=<span class="string">"uploadbgPic"</span> <span class="attr">action</span>=<span class="string">"url/uf"</span> <span class="attr">method</span>=<span class="string">"post"</span> <span class="attr">enctype</span>=<span class="string">"multipart/form-data"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">name</span>=<span class="string">"file"</span> <span class="attr">accept</span>=<span class="string">"image/*"</span> <span class="attr">class</span>=<span class="string">"upload2"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">form</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'#coverbg'</span>).on(<span class="string">'change'</span>,<span class="string">'.upload2'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> formData = <span class="keyword">new</span> FormData($(<span class="string">"#uploadbgPic"</span>)[<span class="number">0</span>]);</div><div class="line">    <span class="comment">//console.log(formData)</span></div><div class="line">    $.ajax(&#123;</div><div class="line">        <span class="attr">url</span>: url + <span class="string">'/uf'</span> ,</div><div class="line">        <span class="attr">type</span>: <span class="string">'POST'</span>,</div><div class="line">        <span class="attr">data</span>: formData,</div><div class="line">        <span class="attr">async</span>: <span class="literal">false</span>,</div><div class="line">        <span class="attr">cache</span>: <span class="literal">false</span>,</div><div class="line">        <span class="attr">contentType</span>: <span class="literal">false</span>,</div><div class="line">        <span class="attr">processData</span>: <span class="literal">false</span>,</div><div class="line">        <span class="attr">success</span>: <span class="function"><span class="keyword">function</span> (<span class="params">result</span>) </span>&#123;</div><div class="line">            <span class="keyword">var</span> data = result.data;</div><div class="line">            $(<span class="string">'#coverbg'</span>).find(<span class="string">'img'</span>).attr(<span class="string">'src'</span>,baseAccessUploadPathPc + data);</div><div class="line">        &#125;,</div><div class="line">        <span class="attr">error</span>: <span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</div><div class="line">           <span class="built_in">console</span>.log(err);</div><div class="line">        &#125;</div><div class="line">    &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="2-递归运行解决ajax无顺序，不用for循环并发"><a href="#2-递归运行解决ajax无顺序，不用for循环并发" class="headerlink" title="2.递归运行解决ajax无顺序，不用for循环并发"></a>2.递归运行解决ajax无顺序，不用for循环并发</h3><p>如果要重复发起请求，for循环不能保证顺序。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> n = <span class="number">0</span>;</div><div class="line">(<span class="function"><span class="keyword">function</span> <span class="title">uploadPic</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> formData = <span class="keyword">new</span> FormData(n);</div><div class="line">    formData.append(<span class="string">'file'</span>, file[n]);</div><div class="line">    $.ajax(&#123;</div><div class="line">        <span class="attr">url</span>: ctx + <span class="string">'/uf'</span>,</div><div class="line">        <span class="attr">type</span>: <span class="string">'POST'</span>,</div><div class="line">        <span class="attr">data</span>: formData,</div><div class="line">        <span class="attr">async</span>: <span class="literal">true</span>,</div><div class="line">        <span class="attr">cache</span>: <span class="literal">false</span>,</div><div class="line">        <span class="attr">contentType</span>: <span class="literal">false</span>,</div><div class="line">        <span class="attr">processData</span>: <span class="literal">false</span>,</div><div class="line">        <span class="attr">success</span>: <span class="function"><span class="keyword">function</span> (<span class="params">result</span>) </span>&#123;</div><div class="line">            <span class="keyword">if</span> (result.suc) &#123;</div><div class="line">                 <span class="keyword">var</span> data = result.data;</div><div class="line">                 <span class="comment">/**</span></div><div class="line">                 * 数据处理</div><div class="line">                 */</div><div class="line">                 n++;</div><div class="line">                 <span class="keyword">if</span>(n&lt;file.length)uploadPic();</div><div class="line">            &#125;<span class="keyword">else</span>&#123;</div><div class="line">                 alert(result.msg)</div><div class="line">            &#125;</div><div class="line">        &#125;,</div><div class="line">        <span class="attr">error</span>: <span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</div><div class="line">            <span class="built_in">console</span>.log(err);</div><div class="line">        &#125;</div><div class="line">     &#125;);</div><div class="line">&#125;)(n);</div></pre></td></tr></table></figure></p>
+
+  </section>
+  
+</article>
+
+  <div class="sharing grid">
+  <section class="profile grid-item grid">
+    <img class="avatar" src="/images/avatar.png" alt="avatar" />
+    <div class="grid-item">
+      <p class="title"> cry101 </p>
+      <p class="subtitle"> You Are The JavaScript In My HTML </p>
+    <div>
+  </section>
+
+  <section class="share-btns">
+      
+  <!-- css -->
+  <link rel="stylesheet" href="/css/style.css">
+  <div class="donateBox">
+    <div id="DonateText" class="tr3">Donate</div>
+    <ul id="donateBox" class="list pos-f tr3">
+      <li id="AliPay">AliPay</li>
+      <li id="WeChat">WeChat</li>
+    </ul>
+    <div id="QRBox" class="pos-f left-100">
+      <div id="MainBox"></div>
+    </div>
+  </div>
+  <!-- donate script -->
+  <script src="/js/jquery.min.js"></script>
+  <script>
+ jQuery(document).ready(function() {
+  var QRBox = $('#QRBox');
+  var MainBox = $('#MainBox');
+  // 二维码路径
+  var AliPayQR  = '/images/alipayImage.jpg';
+  var WeChanQR  = '/images/wechatImage.jpg';
+
+
+  function showQR(QR) {
+    if (QR) {
+      MainBox.css('background-image','url('+QR+')');
+    }
+    $('#DonateText,#donateBox,#github').addClass('blur');
+    QRBox.fadeIn(300,function(argument) {
+      MainBox.addClass('showQR');
+    });
+  }
+
+  $('#donateBox>li').click(function(event) {
+    var thisID  = $(this).attr('id');
+    if (thisID === 'AliPay') {
+      showQR(AliPayQR);
+    } else if (thisID === 'WeChat') {
+      showQR(WeChanQR);
+    }
+  });
+
+  MainBox.click(function(event) {
+    MainBox.removeClass('showQR').addClass('hideQR');
+    setTimeout (function(a) {
+      QRBox.fadeOut(300,function(argument) {
+        MainBox.removeClass('hideQR');
+      });
+      $('#DonateText,#donateBox,#github').removeClass('blur');
+    },600);
+
+  });
+});
+  </script>
+
+
+  </section>
+</div>
+
+
+  
+    
+<section id="comment">  
+ <!-- 多说评论框 start -->  
+<div class="ds-thread" data-thread-key="2017/02/16/ajax/" data-title="ajax的一些小技巧" data-url="http://itbirds1900.github.io/http://yoursite.com/2017/02/16/ajax/"></div>  
+<!-- 多说评论框 end -->  
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->  
+<script type="text/javascript">  
+    var duoshuoQuery = {short_name:"itmyhome1900"};  
+        (function() {  
+            var ds = document.createElement('script');  
+            ds.type = 'text/javascript';ds.async = true;  
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';  
+            ds.charset = 'UTF-8';  
+            (document.getElementsByTagName('head')[0]   
+             || document.getElementsByTagName('body')[0]).appendChild(ds);  
+        })();  
+</script>  
+<!-- 多说公共JS代码 end -->  
+</section>
+
+
+  
+</main>
+
+</body>
+</html>

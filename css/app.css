@@ -111,7 +111,6 @@ main.index {
     padding: 15px 0 30px 0; }
   main.index .article-title {
     margin: 0;
-    padding-top: 30px;
     text-transform: capitalize; }
   main.index .article-date {
     color: #aaa; }
@@ -160,8 +159,14 @@ main.post {
   margin: 0 auto;
   padding: 15px; }
   main.post article {
-    padding-top: 45px;
-    line-height: 1.7; }
+    margin-top: 45px;
+    line-height: 1.7;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    background: #ECECEC;
+    -webkit-box-shadow: 0 0 10px #CCC;
+    -moz-box-shadow: 0 0 10px #CCC;
+    box-shadow: 0 0 10px #CCC; }
   main.post .article-entry {
     margin-top: 75px;
     /* * markdown it -> anchors in config.yml */ }

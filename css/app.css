@@ -221,7 +221,8 @@ main.post {
   max-width: 900px;
   margin: 0 auto;
   padding: 15px;
-  padding-top: 90px;
+  margin-top: 90px;
+  background: #ECECEC;
   line-height: 1.7; }
   .page h1, .page h2 {
     border-bottom: 1px solid #eee;

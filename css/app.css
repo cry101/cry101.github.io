@@ -223,6 +223,10 @@ main.post {
   padding: 15px;
   margin-top: 90px;
   background: #ECECEC;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0 0 10px #CCC;
+  -moz-box-shadow: 0 0 10px #CCC;
+  box-shadow: 0 0 10px #CCC;
   line-height: 1.7; }
   .page h1, .page h2 {
     border-bottom: 1px solid #eee;
@@ -268,7 +272,7 @@ main.post {
   border-style: solid;
   border-width: 1px 0;
   overflow: auto;
-  color: #ccc;
+  color: #fff;
   line-height: 20px; }
 
 .line-numbers, .article-entry .highlight .gutter pre {
@@ -342,10 +346,14 @@ pre .comment,
 pre .title {
   color: #999; }
 
+pre .attr {
+  color: #a6e22e; }
+
 pre .variable,
 pre .attribute,
-pre .tag,
 pre .regexp,
+pre .tag,
+pre .built_in,
 pre .ruby .constant,
 pre .xml .tag, pre .title,
 pre .xml .pi,
@@ -354,11 +362,10 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-  color: #f2777a; }
+  color: #f92672; }
 
 pre .number,
 pre .preprocessor,
-pre .built_in,
 pre .literal,
 pre .params,
 pre .constant {
@@ -367,7 +374,7 @@ pre .constant {
 pre .class,
 pre .ruby .class .title,
 pre .css .rules .attribute {
-  color: #99cc99; }
+  color: #a6e22e; }
 
 pre .string,
 pre .value,
@@ -375,10 +382,10 @@ pre .inheritance,
 pre .header,
 pre .ruby .symbol,
 pre .xml .cdata {
-  color: #99cc99; }
+  color: #e6db74; }
 
 pre .css .hexcolor {
-  color: #66cccc; }
+  color: #66d9ef; }
 
 pre .function,
 pre .python .decorator,
@@ -388,11 +395,11 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #6699cc; }
+  color: #66d9ef; }
 
 pre .keyword,
 pre .javascript .function {
-  color: #cc99cc; }
+  color: #66d9ef; }
 
 .back-to-home {
   position: absolute;

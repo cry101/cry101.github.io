@@ -167,7 +167,7 @@ main.post {
     -moz-box-shadow: 0 0 10px #CCC;
     box-shadow: 0 0 10px #CCC; }
   main.post .article-entry {
-    margin-top: 75px;
+    margin-top: 45px;
     /* * markdown it -> anchors in config.yml */ }
     main.post .article-entry > h2, main.post .article-entry > h3, main.post .article-entry > h4, main.post .article-entry > h5, main.post .article-entry > h6 {
       margin-bottom: 1rem; }
@@ -345,11 +345,7 @@ pre .comment,
 pre .title {
   color: #999; }
 
-pre .attr {
-  color: #a6e22e; }
-
 pre .variable,
-pre .attribute,
 pre .regexp,
 pre .tag,
 pre .built_in,
@@ -363,7 +359,6 @@ pre .css .class,
 pre .css .pseudo {
   color: #f92672; }
 
-pre .number,
 pre .preprocessor,
 pre .literal,
 pre .params,
@@ -371,9 +366,13 @@ pre .constant {
   color: #f99157; }
 
 pre .class,
+pre .attr,
 pre .ruby .class .title,
 pre .css .rules .attribute {
   color: #a6e22e; }
+
+pre .number {
+  color: #AE81FF; }
 
 pre .string,
 pre .value,
@@ -383,11 +382,9 @@ pre .ruby .symbol,
 pre .xml .cdata {
   color: #e6db74; }
 
-pre .css .hexcolor {
-  color: #66d9ef; }
-
 pre .function,
-pre .python .decorator,
+pre .attribute,
+pre .css .hexcolor .python .decorator,
 pre .python .title,
 pre .ruby .function .title,
 pre .ruby .title .keyword,

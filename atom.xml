@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-14T08:04:10.922Z</updated>
+  <updated>2017-03-15T09:25:30.490Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pro-note</title>
+    <link href="http://yoursite.com/2017/03/15/pro-note/"/>
+    <id>http://yoursite.com/2017/03/15/pro-note/</id>
+    <published>2017-03-15T09:22:24.000Z</published>
+    <updated>2017-03-15T09:25:30.490Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一本小说app项目"><a href="#一本小说app项目" class="headerlink" title="一本小说app项目"></a>一本小说app项目</h2><hr>
+<p>完成时间：2017.01 - 2017.01<br>核心技术：apicloud,jquery,Aui,vue,artTemplate</p>
+<hr>
+<h2 id="贴一些图好了"><a href="#贴一些图好了" class="headerlink" title="贴一些图好了"></a>贴一些图好了</h2><h3 id="首页，本地存储，vue组件："><a href="#首页，本地存储，vue组件：" class="headerlink" title="首页，本地存储，vue组件："></a>首页，本地存储，vue组件：</h3><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/yibenxiaoshuo/1.PNG" alt="图片"></p>
+<h3 id="置顶删除功能通过vue状态实现："><a href="#置顶删除功能通过vue状态实现：" class="headerlink" title="置顶删除功能通过vue状态实现："></a>置顶删除功能通过vue状态实现：</h3><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/yibenxiaoshuo/2.PNG" alt="图片"></p>
+<h3 id="搜索功能："><a href="#搜索功能：" class="headerlink" title="搜索功能："></a>搜索功能：</h3><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/yibenxiaoshuo/3.PNG" alt="图片"></p>
+<h3 id="小说分类："><a href="#小说分类：" class="headerlink" title="小说分类："></a>小说分类：</h3><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/yibenxiaoshuo/4.PNG" alt="图片"></p>
+<h3 id="小说详情，下载调用api："><a href="#小说详情，下载调用api：" class="headerlink" title="小说详情，下载调用api："></a>小说详情，下载调用api：</h3><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/yibenxiaoshuo/5.PNG" alt="图片"></p>
+<h3 id="阅读器，调用官方模块，菜单实现是再open一个frame："><a href="#阅读器，调用官方模块，菜单实现是再open一个frame：" class="headerlink" title="阅读器，调用官方模块，菜单实现是再open一个frame："></a>阅读器，调用官方模块，菜单实现是再open一个frame：</h3><p><img src="https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/yibenxiaoshuo/6.PNG" alt="图片"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;一本小说app项目&quot;&gt;&lt;a href=&quot;#一本小说app项目&quot; class=&quot;headerlink&quot; title=&quot;一本小说app项目&quot;&gt;&lt;/a&gt;一本小说app项目&lt;/h2&gt;&lt;hr&gt;
+&lt;p&gt;完成时间：2017.01 - 2017.01&lt;br&gt;核心技术：apiclo
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>ES6-01</title>
@@ -147,8 +175,8 @@
   
   <entry>
     <title>小说app项目</title>
-    <link href="http://yoursite.com/2017/02/15/novel/"/>
-    <id>http://yoursite.com/2017/02/15/novel/</id>
+    <link href="http://yoursite.com/2017/02/15/pro-novel/"/>
+    <id>http://yoursite.com/2017/02/15/pro-novel/</id>
     <published>2017-02-15T02:33:19.000Z</published>
     <updated>2017-02-15T02:40:43.535Z</updated>
     
@@ -175,8 +203,8 @@
   
   <entry>
     <title>漫画app项目</title>
-    <link href="http://yoursite.com/2017/02/14/qumanhua/"/>
-    <id>http://yoursite.com/2017/02/14/qumanhua/</id>
+    <link href="http://yoursite.com/2017/02/14/pro-comic/"/>
+    <id>http://yoursite.com/2017/02/14/pro-comic/</id>
     <published>2017-02-14T09:29:47.000Z</published>
     <updated>2017-02-14T10:23:54.576Z</updated>
     

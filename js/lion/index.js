@@ -15,7 +15,7 @@ var scene,
 		container;
 
 //SCENE
-var floor, lion, fan,
+var floor, lion, fan, sun,
     isBlowing = false;
 
 //SCREEN VARIABLES
@@ -140,6 +140,82 @@ function createFan(){
   fan = new Fan();
   fan.threegroup.position.z = 350;
   scene.add(fan.threegroup);
+}
+
+function createSun(){
+  sun = new Sun();
+  sun.threegroup.position.y = 350;
+  sun.threegroup.position.x = -400;
+  scene.add(sun.threegroup);
+}
+Sun = function(){
+  this.isBlowing = false;
+  this.speed = 0;
+  this.acc =0;
+  this.redMat = new THREE.MeshLambertMaterial ({
+    color: 0xFF9966, 
+    shading:THREE.FlatShading
+  });
+  
+  var geometry = new THREE.CircleGeometry( 40, 32 );
+  var material = new THREE.MeshBasicMaterial( { color: 0xFF9966 } );
+  this.circle = new THREE.Mesh( geometry, material );
+  this.circle.position.z = 50;
+
+  var propGeom = new THREE.BoxGeometry(10,20,1);
+  propGeom.applyMatrix( new THREE.Matrix4().makeTranslation( 0,25,0) );
+  
+  // sunlight
+  var prop1 = new THREE.Mesh(propGeom, this.redMat);
+  prop1.position.z = 50;
+
+  var prop2 = prop1.clone();
+  prop2.rotation.z = Math.PI/4;
+  prop2.position.x = -27;
+  prop2.position.y = 27;
+
+  var prop3 = prop1.clone();
+  prop3.rotation.z = Math.PI/2;
+  prop3.position.x = -35;
+
+  var prop4 = prop1.clone();
+  prop4.rotation.z = Math.PI*3/4;
+  prop4.position.x = -27;
+  prop4.position.y = -27;
+
+  var prop5 = prop1.clone();
+  prop5.rotation.z = Math.PI;
+  prop5.position.y = -35; 
+
+  var prop6 = prop1.clone();
+  prop6.rotation.z = -Math.PI*3/4;
+  prop6.position.x = 27;
+  prop6.position.y = -27;
+
+  var prop7 = prop1.clone();
+  prop7.rotation.z = -Math.PI/2;
+  prop7.position.x = 35;
+
+  var prop8 = prop1.clone();
+  prop8.rotation.z = -Math.PI/4;
+  prop8.position.x = 27;
+  prop8.position.y = 27;
+
+  prop1.position.y = 35;
+
+  this.propeller = new THREE.Group();
+  this.propeller.add(prop1);
+  this.propeller.add(prop2);
+  this.propeller.add(prop3);
+  this.propeller.add(prop4);
+  this.propeller.add(prop5);
+  this.propeller.add(prop6);
+  this.propeller.add(prop7);
+  this.propeller.add(prop8);
+
+  this.threegroup = new THREE.Group();
+  this.threegroup.add(this.circle);
+  this.threegroup.add(this.propeller);
 }
 
 Fan = function(){
@@ -677,6 +753,8 @@ function loop(){
   var xTarget = (mousePos.x-windowHalfX);
   var yTarget= (mousePos.y-windowHalfY);
   
+  sun.propeller.rotation.z += 0.005;
+
   fan.isBlowing = isBlowing;
   fan.update(xTarget, yTarget);
   if(isBlowing) {
@@ -698,6 +776,7 @@ createLights();
 createFloor();
 createLion();
 createFan();
+createSun();
 loop();
 
 

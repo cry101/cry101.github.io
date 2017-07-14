@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>常用css3总结 | cry101</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/app.css">
+  <!-- <link rel='stylesheet' href='http://fonts.useso.com/css?family=Source+Code+Pro'> -->
+  
+</head>
+
+<body>
+  <nav class="app-nav">
+  
+    
+      <a href="/.">home</a>
+    
+  
+    
+      <a href="/archives">archive</a>
+    
+  
+    
+      <a href="/about">about</a>
+    
+  
+    
+      <a href="/atom.xml">rss</a>
+    
+  
+</nav>
+
+  <main class="post">
+  <article>
+  <h1 class="article-title">
+    <a href="/2017/02/17/css3/">常用css3总结</a>
+  </h1>
+
+  <section class="article-meta">
+    <p class="article-date">二月 17 2017</p>
+  </section>
+
+  <section class="article-entry">
+    <p><a href="http://www.w3school.com.cn/cssref/index.asp" target="_blank" rel="external">W3C手册在此</a></p>
+<h3 id="1-圆角-—-border-radius"><a href="#1-圆角-—-border-radius" class="headerlink" title="1.圆角 — border-radius"></a>1.圆角 — border-radius</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.box</span>&#123;</div><div class="line">  <span class="comment">/* 语法：border-radius: 1-4 length|% / 1-4 length|%;*/</span></div><div class="line">  <span class="attribute">-moz-border-radius</span>:<span class="number">3px</span>;</div><div class="line">  <span class="attribute">-webkit-border-radius</span>:<span class="number">3px</span>;</div><div class="line">  <span class="attribute">border-radius</span>:<span class="number">3px</span>;</div><div class="line"></div><div class="line">  <span class="attribute">border-radius</span>: <span class="number">2em</span> <span class="number">1em</span> <span class="number">4em</span> / <span class="number">0.5em</span> <span class="number">3em</span>;</div><div class="line">  <span class="comment">/*等价于*/</span></div><div class="line">  <span class="attribute">border-top-left-radius</span>: <span class="number">2em</span> <span class="number">0.5em</span>;</div><div class="line">  <span class="attribute">border-top-right-radius</span>: <span class="number">1em</span> <span class="number">3em</span>;</div><div class="line">  <span class="attribute">border-bottom-right-radius</span>: <span class="number">4em</span> <span class="number">0.5em</span>;</div><div class="line">  <span class="attribute">border-bottom-left-radius</span>: <span class="number">1em</span> <span class="number">3em</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="2-阴影-—-box-shadow"><a href="#2-阴影-—-box-shadow" class="headerlink" title="2.阴影 — box-shadow"></a>2.阴影 — box-shadow</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.box</span>&#123;</div><div class="line">  <span class="attribute">-webkit-box-shadow</span>:<span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> <span class="number">#CCC</span>;  </div><div class="line">  <span class="attribute">-moz-box-shadow</span>:<span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> <span class="number">#CCC</span>;  </div><div class="line">  <span class="attribute">box-shadow</span>:<span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> <span class="number">#CCC</span>;  </div><div class="line"></div><div class="line">  <span class="comment">/*语法:box-shadow: h-shadow v-shadow blur spread color inset</span></div><div class="line">   * h-shadow : 水平阴影位置（必需）</div><div class="line">   * v-shadow : 垂直阴影的位置 （必需）</div><div class="line">   * blur : 模糊距离</div><div class="line">   * spread : 阴影的尺寸</div><div class="line">   * color : 阴影的颜色</div><div class="line">   * inset : 将外部阴影 (outset) 改为内部阴影</div><div class="line">   */</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="3-动画-—-animation"><a href="#3-动画-—-animation" class="headerlink" title="3.动画 — animation"></a>3.动画 — animation</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">keyframes</span> mymove</div><div class="line">&#123;</div><div class="line"><span class="selector-tag">from</span> &#123;<span class="attribute">top</span>:<span class="number">0px</span>;&#125;</div><div class="line"><span class="selector-tag">to</span> &#123;<span class="attribute">top</span>:<span class="number">200px</span>;&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@-<span class="keyword">moz</span>-<span class="keyword">keyframes</span> mymove /* Firefox */</div><div class="line">&#123;</div><div class="line"><span class="selector-tag">from</span> &#123;<span class="attribute">top</span>:<span class="number">0px</span>;&#125;</div><div class="line"><span class="selector-tag">to</span> &#123;<span class="attribute">top</span>:<span class="number">200px</span>;&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@-<span class="keyword">webkit</span>-<span class="keyword">keyframes</span> mymove /* Safari 和 Chrome */</div><div class="line">&#123;</div><div class="line"><span class="selector-tag">from</span> &#123;<span class="attribute">top</span>:<span class="number">0px</span>;&#125;</div><div class="line"><span class="selector-tag">to</span> &#123;<span class="attribute">top</span>:<span class="number">200px</span>;&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@-<span class="keyword">o</span>-<span class="keyword">keyframes</span> mymove /* Opera */</div><div class="line">&#123;</div><div class="line"><span class="selector-tag">from</span> &#123;<span class="attribute">top</span>:<span class="number">0px</span>;&#125;</div><div class="line"><span class="selector-tag">to</span> &#123;<span class="attribute">top</span>:<span class="number">200px</span>;&#125;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">div</span></div><div class="line">&#123;</div><div class="line"><span class="attribute">animation</span>:mymove <span class="number">5s</span> infinite;</div><div class="line"><span class="attribute">-webkit-animation</span>:mymove <span class="number">5s</span> infinite; <span class="comment">/* Safari 和 Chrome */</span></div><div class="line">&#125;</div><div class="line"><span class="comment">/*</span></div><div class="line">*animation 属性是一个简写属性，用于设置六个动画属性：</div><div class="line">*animation-name 规定需要绑定到选择器的 keyframe 名称</div><div class="line">*animation-duration 规定完成动画所花费的时间，以秒或毫秒计</div><div class="line">*animation-timing-function 规定动画的速度曲线  linear/ease/ease-in/ease-out/ease-in-out/cubic-bezier(n,n,n,n)</div><div class="line">*animation-delay 规定在动画开始之前的延迟</div><div class="line">*animation-iteration-count 规定动画应该播放的次数  n/infinite(循环播放)</div><div class="line">*animation-direction 规定是否应该轮流反向播放动画</div><div class="line">*/</div></pre></td></tr></table></figure>
+
+  </section>
+  
+</article>
+
+  <div class="sharing grid">
+  <section class="profile grid-item grid">
+    <img class="avatar" src="/images/avatar.png" alt="avatar" />
+    <div class="grid-item">
+      <p class="title"> cry101 </p>
+      <p class="subtitle"> You Are The JavaScript In My HTML </p>
+    <div>
+  </section>
+
+  <section class="share-btns">
+      
+  <!-- css -->
+  <link rel="stylesheet" href="/css/style.css">
+  <div class="donateBox">
+    <div id="DonateText" class="tr3">Donate</div>
+    <ul id="donateBox" class="list pos-f tr3">
+      <li id="AliPay">AliPay</li>
+      <li id="WeChat">WeChat</li>
+    </ul>
+    <div id="QRBox" class="pos-f left-100">
+      <div id="MainBox"></div>
+    </div>
+  </div>
+  <!-- donate script -->
+  <script src="/js/jquery.min.js"></script>
+  <script>
+ jQuery(document).ready(function() {
+  var QRBox = $('#QRBox');
+  var MainBox = $('#MainBox');
+  // 二维码路径
+  var AliPayQR  = '/images/alipayImage.jpg';
+  var WeChanQR  = '/images/wechatImage.jpg';
+
+
+  function showQR(QR) {
+    if (QR) {
+      MainBox.css('background-image','url('+QR+')');
+    }
+    $('#DonateText,#donateBox,#github').addClass('blur');
+    QRBox.fadeIn(300,function(argument) {
+      MainBox.addClass('showQR');
+    });
+  }
+
+  $('#donateBox>li').click(function(event) {
+    var thisID  = $(this).attr('id');
+    if (thisID === 'AliPay') {
+      showQR(AliPayQR);
+    } else if (thisID === 'WeChat') {
+      showQR(WeChanQR);
+    }
+  });
+
+  MainBox.click(function(event) {
+    MainBox.removeClass('showQR').addClass('hideQR');
+    setTimeout (function(a) {
+      QRBox.fadeOut(300,function(argument) {
+        MainBox.removeClass('hideQR');
+      });
+      $('#DonateText,#donateBox,#github').removeClass('blur');
+    },600);
+
+  });
+});
+  </script>
+
+
+  </section>
+</div>
+
+
+  
+    
+<section id="comment">  
+ <!-- 多说评论框 start -->  
+<div class="ds-thread" data-thread-key="2017/02/17/css3/" data-title="常用css3总结" data-url="http://itbirds1900.github.io/http://yoursite.com/2017/02/17/css3/"></div>  
+<!-- 多说评论框 end -->  
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->  
+<script type="text/javascript">  
+    var duoshuoQuery = {short_name:"itmyhome1900"};  
+        (function() {  
+            var ds = document.createElement('script');  
+            ds.type = 'text/javascript';ds.async = true;  
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';  
+            ds.charset = 'UTF-8';  
+            (document.getElementsByTagName('head')[0]   
+             || document.getElementsByTagName('body')[0]).appendChild(ds);  
+        })();  
+</script>  
+<!-- 多说公共JS代码 end -->  
+</section>
+
+
+  
+</main>
+
+</body>
+</html>

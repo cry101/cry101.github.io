@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JSON.parse 和 JSON.stringify | cry101</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/app.css">
+  <!-- <link rel='stylesheet' href='http://fonts.useso.com/css?family=Source+Code+Pro'> -->
+  
+</head>
+
+<body>
+  <nav class="app-nav">
+  
+    
+      <a href="/.">home</a>
+    
+  
+    
+      <a href="/archives">archive</a>
+    
+  
+    
+      <a href="/about">about</a>
+    
+  
+    
+      <a href="/atom.xml">rss</a>
+    
+  
+</nav>
+
+  <main class="post">
+  <article>
+  <h1 class="article-title">
+    <a href="/2017/01/14/JSON/">JSON.parse 和 JSON.stringify</a>
+  </h1>
+
+  <section class="article-meta">
+    <p class="article-date">一月 14 2017</p>
+  </section>
+
+  <section class="article-entry">
+    <h3 id="1-parse用于从一个字符串中解析出json对象-如"><a href="#1-parse用于从一个字符串中解析出json对象-如" class="headerlink" title="1.parse用于从一个字符串中解析出json对象,如"></a>1.parse用于从一个字符串中解析出json对象,如</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'&#123;"name":"huangxiaojian","age":"23"&#125;'</span></div></pre></td></tr></table></figure>
+<p>结果：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">JSON</span>.parse(str)</div><div class="line"></div><div class="line"><span class="built_in">Object</span></div><div class="line"></div><div class="line">age: <span class="string">"23"</span></div><div class="line">name: <span class="string">"huangxiaojian"</span></div><div class="line">__proto__: <span class="built_in">Object</span></div></pre></td></tr></table></figure>
+<p>注意：单引号写在{}外，每个属性名都必须用双引号，否则会抛出异常。</p>
+<h3 id="2-stringify-用于从一个对象解析出字符串，如"><a href="#2-stringify-用于从一个对象解析出字符串，如" class="headerlink" title="2.stringify()用于从一个对象解析出字符串，如"></a>2.stringify()用于从一个对象解析出字符串，如</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = &#123;<span class="attr">a</span>:<span class="number">1</span>,<span class="attr">b</span>:<span class="number">2</span>&#125;</div></pre></td></tr></table></figure>
+<p>结果：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">JSON</span>.stringify(a)</div><div class="line"></div><div class="line"><span class="string">"&#123;"</span>a<span class="string">":1,"</span>b<span class="string">":2&#125;"</span></div></pre></td></tr></table></figure></p>
+
+  </section>
+  
+</article>
+
+  <div class="sharing grid">
+  <section class="profile grid-item grid">
+    <img class="avatar" src="/images/avatar.png" alt="avatar" />
+    <div class="grid-item">
+      <p class="title"> cry101 </p>
+      <p class="subtitle"> You Are The JavaScript In My HTML </p>
+    <div>
+  </section>
+
+  <section class="share-btns">
+      
+  <!-- css -->
+  <link rel="stylesheet" href="/css/style.css">
+  <div class="donateBox">
+    <div id="DonateText" class="tr3">Donate</div>
+    <ul id="donateBox" class="list pos-f tr3">
+      <li id="AliPay">AliPay</li>
+      <li id="WeChat">WeChat</li>
+    </ul>
+    <div id="QRBox" class="pos-f left-100">
+      <div id="MainBox"></div>
+    </div>
+  </div>
+  <!-- donate script -->
+  <script src="/js/jquery.min.js"></script>
+  <script>
+ jQuery(document).ready(function() {
+  var QRBox = $('#QRBox');
+  var MainBox = $('#MainBox');
+  // 二维码路径
+  var AliPayQR  = '/images/alipayImage.jpg';
+  var WeChanQR  = '/images/wechatImage.jpg';
+
+
+  function showQR(QR) {
+    if (QR) {
+      MainBox.css('background-image','url('+QR+')');
+    }
+    $('#DonateText,#donateBox,#github').addClass('blur');
+    QRBox.fadeIn(300,function(argument) {
+      MainBox.addClass('showQR');
+    });
+  }
+
+  $('#donateBox>li').click(function(event) {
+    var thisID  = $(this).attr('id');
+    if (thisID === 'AliPay') {
+      showQR(AliPayQR);
+    } else if (thisID === 'WeChat') {
+      showQR(WeChanQR);
+    }
+  });
+
+  MainBox.click(function(event) {
+    MainBox.removeClass('showQR').addClass('hideQR');
+    setTimeout (function(a) {
+      QRBox.fadeOut(300,function(argument) {
+        MainBox.removeClass('hideQR');
+      });
+      $('#DonateText,#donateBox,#github').removeClass('blur');
+    },600);
+
+  });
+});
+  </script>
+
+
+  </section>
+</div>
+
+
+  
+    
+<section id="comment">  
+ <!-- 多说评论框 start -->  
+<div class="ds-thread" data-thread-key="2017/01/14/JSON/" data-title="JSON.parse 和 JSON.stringify" data-url="http://itbirds1900.github.io/http://yoursite.com/2017/01/14/JSON/"></div>  
+<!-- 多说评论框 end -->  
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->  
+<script type="text/javascript">  
+    var duoshuoQuery = {short_name:"itmyhome1900"};  
+        (function() {  
+            var ds = document.createElement('script');  
+            ds.type = 'text/javascript';ds.async = true;  
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';  
+            ds.charset = 'UTF-8';  
+            (document.getElementsByTagName('head')[0]   
+             || document.getElementsByTagName('body')[0]).appendChild(ds);  
+        })();  
+</script>  
+<!-- 多说公共JS代码 end -->  
+</section>
+
+
+  
+</main>
+
+</body>
+</html>

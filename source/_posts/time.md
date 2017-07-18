@@ -1,7 +1,7 @@
 ---
 title: 关于时间的JS
 date: 2017-01-16 17:52:20
-tags:
+tags: javascript
 ---
 
 时间函数加减 2015-10-23 

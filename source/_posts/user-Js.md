@@ -1,7 +1,7 @@
 ---
 title: 用js替换jquery
 date: 2017-07-18 10:56:11
-tags:
+tags: javascript
 ---
 
 ### 1.获取元素

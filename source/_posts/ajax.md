@@ -1,7 +1,7 @@
 ---
 title: ajax的一些小技巧
 date: 2017-02-16 17:32:19
-tags:
+tags: ajax
 ---
 
 ### 1.利用html5 formData实现ajax上传文件

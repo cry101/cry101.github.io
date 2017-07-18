@@ -1,7 +1,7 @@
 ---
 title: 基于vue的简易日历
 date: 2017-02-15 11:33:29
-tags:
+tags: vue
 ---
 
 ## 基于vue的简易日历

@@ -1,7 +1,7 @@
 ---
 title: 小记项目app
 date: 2017-03-15 17:22:24
-tags:
+tags: project
 ---
 
 ## 记账app项目

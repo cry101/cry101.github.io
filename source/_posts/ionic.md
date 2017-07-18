@@ -1,7 +1,7 @@
 ---
 title: ionic APP开发相关踩坑
 date: 2017-06-15 16:47:08
-tags: ionic + angular + cordova
+tags: [ionic,angular,cordova]
 ---
 
 ### 1.配置各种环境参考资料

@@ -1,6 +1,6 @@
 ---
-title: about
-date: 2017-01-13 15:48:56
+title: 
+date: 
 ---
 # about me 
 ------

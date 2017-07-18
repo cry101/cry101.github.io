@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>若尧</title>
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-18T03:25:08.545Z</updated>
+  <updated>2017-07-18T07:36:46.532Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Cary</name>
     
   </author>
   
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/07/18/user-Js/"/>
     <id>http://yoursite.com/2017/07/18/user-Js/</id>
     <published>2017-07-18T02:56:11.000Z</published>
-    <updated>2017-07-18T03:25:08.545Z</updated>
+    <updated>2017-07-18T07:36:46.532Z</updated>
     
     <content type="html"><![CDATA[<h3 id="1-获取元素"><a href="#1-获取元素" class="headerlink" title="1.获取元素"></a>1.获取元素</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// jquery</span></div><div class="line">$(<span class="string">'.xxx'</span>);  <span class="comment">//class获取  </span></div><div class="line">$(<span class="string">'#xxx'</span>);  <span class="comment">//id获取  </span></div><div class="line">$(<span class="string">'.xxx.ccc'</span>);  <span class="comment">//同时包含xxx和ccc  </span></div><div class="line">$(<span class="string">'.xxx,.zzz'</span>); <span class="comment">//多选  </span></div><div class="line">$(<span class="string">'.xxx div'</span>); <span class="comment">//子类  </span></div><div class="line">$(<span class="string">'.xxx p:first'</span>); <span class="comment">//第一个P元素  </span></div><div class="line"></div><div class="line"><span class="comment">// javascript （querySelectorAll）</span></div><div class="line"><span class="built_in">document</span>.querySelector(<span class="string">'.xxx'</span>);  <span class="comment">//class获取  </span></div><div class="line"><span class="built_in">document</span>.querySelector(<span class="string">'#xxx'</span>);<span class="comment">//id获取  </span></div><div class="line"><span class="built_in">document</span>.querySelector(<span class="string">'.xxx.ccc'</span>);<span class="comment">//同时包含xxx和ccc  </span></div><div class="line"><span class="built_in">document</span>.querySelector(<span class="string">'.xxx,.ccc'</span>);<span class="comment">//多选  </span></div><div class="line"><span class="built_in">document</span>.querySelector(<span class="string">'.xxx div'</span>);<span class="comment">//子类  </span></div><div class="line"><span class="built_in">document</span>.querySelector(<span class="string">'.xxx p:first-child'</span>);<span class="comment">//第一个P元素</span></div></pre></td></tr></table></figure>
 <h3 id="2-操作class"><a href="#2-操作class" class="headerlink" title="2.操作class"></a>2.操作class</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// jquery</span></div><div class="line">$(<span class="string">'.xxx'</span>).addClass(<span class="string">'class_name'</span>);</div><div class="line">$(<span class="string">'.xxx'</span>).removeClass(<span class="string">'class_name'</span>); </div><div class="line">$(<span class="string">'.xxx'</span>).toggleClass(<span class="string">'class_name'</span>); </div><div class="line"></div><div class="line"><span class="comment">// javascript</span></div><div class="line">el.classList.add(<span class="string">'class_name'</span>);</div><div class="line">el.classList.remove(<span class="string">'class_name'</span>);</div><div class="line">el.classList.toggle(<span class="string">'class_name'</span>);</div></pre></td></tr></table></figure>
@@ -56,6 +56,8 @@
     </summary>
     
     
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
   </entry>
   
   <entry>
@@ -63,7 +65,7 @@
     <link href="http://yoursite.com/2017/06/15/ionic/"/>
     <id>http://yoursite.com/2017/06/15/ionic/</id>
     <published>2017-06-15T08:47:08.000Z</published>
-    <updated>2017-06-16T02:06:14.236Z</updated>
+    <updated>2017-07-18T07:28:46.297Z</updated>
     
     <content type="html"><![CDATA[<h3 id="1-配置各种环境参考资料"><a href="#1-配置各种环境参考资料" class="headerlink" title="1.配置各种环境参考资料"></a>1.配置各种环境参考资料</h3><p>（1）<a href="http://reactnative.cn/docs/0.45/getting-started.html" target="_blank" rel="external">React Native 开发文档</a><br>注：搭建android环境，sdk，之前搞了很久，忘记记录了。。<br>（2）<a href="https://angular.cn/" target="_blank" rel="external">angular 中文文档</a><br>（3）<a href="http://ionicframework.com/docs" target="_blank" rel="external">ionic 文档</a><br>（4）<a href="http://www.pc6.com/softview/SoftView_421983.html" target="_blank" rel="external">Gradle构建工具v3.3下载</a><br>注：是一个android打包工具，需要配置环境变量，官网下载太慢<br>（5）<a href="http://www.jianshu.com/p/9595eccac3d1" target="_blank" rel="external">Ionic打包过程下载Gradle失败的解决方法</a><br>注：暂时没遇到，上次打包了半小时</p>
 <h3 id="2-ionic-基本功能配置"><a href="#2-ionic-基本功能配置" class="headerlink" title="2.ionic 基本功能配置"></a>2.ionic 基本功能配置</h3><p>（1）<a href="http://www.cnblogs.com/zsl123/p/6425489.html" target="_blank" rel="external">ionic2 中隐藏子页面tabs选项卡的三种方法</a><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//app.module.ts 找到</span></div><div class="line">imports: [</div><div class="line">    IonicModule.forRoot(MyApp,&#123;</div><div class="line">      <span class="attr">tabsHideOnSubPages</span>: <span class="string">'true'</span>         <span class="comment">//隐藏全部子页面tabs</span></div><div class="line">    &#125;)</div><div class="line">  ],</div></pre></td></tr></table></figure></p>
@@ -79,7 +81,11 @@
     </summary>
     
     
-      <category term="ionic + angular + cordova" scheme="http://yoursite.com/tags/ionic-angular-cordova/"/>
+      <category term="ionic" scheme="http://yoursite.com/tags/ionic/"/>
+    
+      <category term="angular" scheme="http://yoursite.com/tags/angular/"/>
+    
+      <category term="cordova" scheme="http://yoursite.com/tags/cordova/"/>
     
   </entry>
   
@@ -88,7 +94,7 @@
     <link href="http://yoursite.com/2017/03/15/pro-note/"/>
     <id>http://yoursite.com/2017/03/15/pro-note/</id>
     <published>2017-03-15T09:22:24.000Z</published>
-    <updated>2017-03-15T10:08:01.557Z</updated>
+    <updated>2017-07-18T07:37:05.207Z</updated>
     
     <content type="html"><![CDATA[<h2 id="记账app项目"><a href="#记账app项目" class="headerlink" title="记账app项目"></a>记账app项目</h2><hr>
 <p>完成时间：2017.02 - 2017.02<br>核心技术：apicloud,jquery,Aui,vue,artTemplate</p>
@@ -115,6 +121,8 @@
     </summary>
     
     
+      <category term="project" scheme="http://yoursite.com/tags/project/"/>
+    
   </entry>
   
   <entry>
@@ -122,7 +130,7 @@
     <link href="http://yoursite.com/2017/03/03/ES6-01/"/>
     <id>http://yoursite.com/2017/03/03/ES6-01/</id>
     <published>2017-03-03T06:56:23.000Z</published>
-    <updated>2017-07-18T02:57:35.865Z</updated>
+    <updated>2017-07-18T07:36:39.947Z</updated>
     
     <content type="html"><![CDATA[<p>总结于：<a href="http://es6.ruanyifeng.com/#docs/" target="_blank" rel="external">ECMAScript6入门</a></p>
 <h3 id="1-Babel转码器"><a href="#1-Babel转码器" class="headerlink" title="1.Babel转码器"></a>1.Babel转码器</h3><p>Babel是一个广泛使用的ES6转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 转码前</span></div><div class="line">input.map(<span class="function"><span class="params">item</span> =&gt;</span> item + <span class="number">1</span>);</div><div class="line"></div><div class="line"><span class="comment">// 转码后</span></div><div class="line">input.map(<span class="function"><span class="keyword">function</span> (<span class="params">item</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> item + <span class="number">1</span>;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
@@ -253,6 +261,8 @@
     </summary>
     
     
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
   </entry>
   
   <entry>
@@ -260,7 +270,7 @@
     <link href="http://yoursite.com/2017/02/17/css3/"/>
     <id>http://yoursite.com/2017/02/17/css3/</id>
     <published>2017-02-17T03:15:11.000Z</published>
-    <updated>2017-02-17T05:56:40.069Z</updated>
+    <updated>2017-07-18T07:36:09.327Z</updated>
     
     <content type="html"><![CDATA[<p><a href="http://www.w3school.com.cn/cssref/index.asp" target="_blank" rel="external">W3C手册在此</a></p>
 <h3 id="1-圆角-—-border-radius"><a href="#1-圆角-—-border-radius" class="headerlink" title="1.圆角 — border-radius"></a>1.圆角 — border-radius</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.box</span>&#123;</div><div class="line">  <span class="comment">/* 语法：border-radius: 1-4 length|% / 1-4 length|%;*/</span></div><div class="line">  <span class="attribute">-moz-border-radius</span>:<span class="number">3px</span>;</div><div class="line">  <span class="attribute">-webkit-border-radius</span>:<span class="number">3px</span>;</div><div class="line">  <span class="attribute">border-radius</span>:<span class="number">3px</span>;</div><div class="line"></div><div class="line">  <span class="attribute">border-radius</span>: <span class="number">2em</span> <span class="number">1em</span> <span class="number">4em</span> / <span class="number">0.5em</span> <span class="number">3em</span>;</div><div class="line">  <span class="comment">/*等价于*/</span></div><div class="line">  <span class="attribute">border-top-left-radius</span>: <span class="number">2em</span> <span class="number">0.5em</span>;</div><div class="line">  <span class="attribute">border-top-right-radius</span>: <span class="number">1em</span> <span class="number">3em</span>;</div><div class="line">  <span class="attribute">border-bottom-right-radius</span>: <span class="number">4em</span> <span class="number">0.5em</span>;</div><div class="line">  <span class="attribute">border-bottom-left-radius</span>: <span class="number">1em</span> <span class="number">3em</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -276,6 +286,8 @@
     </summary>
     
     
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
   </entry>
   
   <entry>
@@ -283,7 +295,7 @@
     <link href="http://yoursite.com/2017/02/16/ajax/"/>
     <id>http://yoursite.com/2017/02/16/ajax/</id>
     <published>2017-02-16T09:32:19.000Z</published>
-    <updated>2017-02-16T09:50:10.703Z</updated>
+    <updated>2017-07-18T07:28:58.106Z</updated>
     
     <content type="html"><![CDATA[<h3 id="1-利用html5-formData实现ajax上传文件"><a href="#1-利用html5-formData实现ajax上传文件" class="headerlink" title="1.利用html5 formData实现ajax上传文件"></a>1.利用html5 formData实现ajax上传文件</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"coverbg"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">form</span> <span class="attr">id</span>=<span class="string">"uploadbgPic"</span> <span class="attr">action</span>=<span class="string">"url/uf"</span> <span class="attr">method</span>=<span class="string">"post"</span> <span class="attr">enctype</span>=<span class="string">"multipart/form-data"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">name</span>=<span class="string">"file"</span> <span class="attr">accept</span>=<span class="string">"image/*"</span> <span class="attr">class</span>=<span class="string">"upload2"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">form</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'#coverbg'</span>).on(<span class="string">'change'</span>,<span class="string">'.upload2'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> formData = <span class="keyword">new</span> FormData($(<span class="string">"#uploadbgPic"</span>)[<span class="number">0</span>]);</div><div class="line">    <span class="comment">//console.log(formData)</span></div><div class="line">    $.ajax(&#123;</div><div class="line">        <span class="attr">url</span>: url + <span class="string">'/uf'</span> ,</div><div class="line">        <span class="attr">type</span>: <span class="string">'POST'</span>,</div><div class="line">        <span class="attr">data</span>: formData,</div><div class="line">        <span class="attr">async</span>: <span class="literal">false</span>,</div><div class="line">        <span class="attr">cache</span>: <span class="literal">false</span>,</div><div class="line">        <span class="attr">contentType</span>: <span class="literal">false</span>,</div><div class="line">        <span class="attr">processData</span>: <span class="literal">false</span>,</div><div class="line">        <span class="attr">success</span>: <span class="function"><span class="keyword">function</span> (<span class="params">result</span>) </span>&#123;</div><div class="line">            <span class="keyword">var</span> data = result.data;</div><div class="line">            $(<span class="string">'#coverbg'</span>).find(<span class="string">'img'</span>).attr(<span class="string">'src'</span>,baseAccessUploadPathPc + data);</div><div class="line">        &#125;,</div><div class="line">        <span class="attr">error</span>: <span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</div><div class="line">           <span class="built_in">console</span>.log(err);</div><div class="line">        &#125;</div><div class="line">    &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
@@ -297,6 +309,8 @@
     </summary>
     
     
+      <category term="ajax" scheme="http://yoursite.com/tags/ajax/"/>
+    
   </entry>
   
   <entry>
@@ -304,7 +318,7 @@
     <link href="http://yoursite.com/2017/02/15/vue-keybord/"/>
     <id>http://yoursite.com/2017/02/15/vue-keybord/</id>
     <published>2017-02-15T03:51:31.000Z</published>
-    <updated>2017-02-15T03:57:54.440Z</updated>
+    <updated>2017-07-18T07:36:55.702Z</updated>
     
     <content type="html"><![CDATA[<h2 id="基于vue的简易数字键盘"><a href="#基于vue的简易数字键盘" class="headerlink" title="基于vue的简易数字键盘"></a>基于vue的简易数字键盘</h2><hr>
 <p>完成时间：2017.02<br>核心技术：zepto,Aui,vue</p>
@@ -323,6 +337,8 @@
     </summary>
     
     
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
   </entry>
   
   <entry>
@@ -330,7 +346,7 @@
     <link href="http://yoursite.com/2017/02/15/vue-calendar/"/>
     <id>http://yoursite.com/2017/02/15/vue-calendar/</id>
     <published>2017-02-15T03:33:29.000Z</published>
-    <updated>2017-02-15T09:04:52.142Z</updated>
+    <updated>2017-07-18T07:36:51.656Z</updated>
     
     <content type="html"><![CDATA[<h2 id="基于vue的简易日历"><a href="#基于vue的简易日历" class="headerlink" title="基于vue的简易日历"></a>基于vue的简易日历</h2><hr>
 <p>完成时间：2017.02<br>核心技术：zepto,Aui,vue<br>从小记app里提取出来的，代码有点乱</p>
@@ -352,6 +368,8 @@
     </summary>
     
     
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
   </entry>
   
   <entry>
@@ -359,7 +377,7 @@
     <link href="http://yoursite.com/2017/02/15/pro-novel/"/>
     <id>http://yoursite.com/2017/02/15/pro-novel/</id>
     <published>2017-02-15T02:33:19.000Z</published>
-    <updated>2017-02-15T02:40:43.535Z</updated>
+    <updated>2017-07-18T07:37:08.731Z</updated>
     
     <content type="html"><![CDATA[<h2 id="一本小说app项目"><a href="#一本小说app项目" class="headerlink" title="一本小说app项目"></a>一本小说app项目</h2><hr>
 <p>完成时间：2017.01 - 2017.01<br>核心技术：apicloud,jquery,Aui,vue,artTemplate</p>
@@ -380,6 +398,8 @@
     </summary>
     
     
+      <category term="project" scheme="http://yoursite.com/tags/project/"/>
+    
   </entry>
   
   <entry>
@@ -387,7 +407,7 @@
     <link href="http://yoursite.com/2017/02/14/pro-comic/"/>
     <id>http://yoursite.com/2017/02/14/pro-comic/</id>
     <published>2017-02-14T09:29:47.000Z</published>
-    <updated>2017-02-14T10:23:54.576Z</updated>
+    <updated>2017-07-18T07:37:02.584Z</updated>
     
     <content type="html"><![CDATA[<h2 id="趣漫画app项目"><a href="#趣漫画app项目" class="headerlink" title="趣漫画app项目"></a>趣漫画app项目</h2><hr>
 <p>完成时间：2016.11 - 2016.12<br>核心技术：apicloud,jquery,Aui,vue,artTemplate</p>
@@ -421,6 +441,8 @@
     </summary>
     
     
+      <category term="project" scheme="http://yoursite.com/tags/project/"/>
+    
   </entry>
   
   <entry>
@@ -428,7 +450,7 @@
     <link href="http://yoursite.com/2017/01/16/time/"/>
     <id>http://yoursite.com/2017/01/16/time/</id>
     <published>2017-01-16T09:52:20.000Z</published>
-    <updated>2017-01-16T10:00:13.820Z</updated>
+    <updated>2017-07-18T07:36:43.533Z</updated>
     
     <content type="html"><![CDATA[<p>时间函数加减 2015-10-23<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">addByTransDate</span>(<span class="params">dateParameter, num</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> translateDate = <span class="string">""</span>, dateString = <span class="string">""</span>, monthString = <span class="string">""</span>, dayString = <span class="string">""</span>;</div><div class="line">    translateDate = dateParameter.replace(<span class="string">"-"</span>, <span class="string">"/"</span>).replace(<span class="string">"-"</span>, <span class="string">"/"</span>);</div><div class="line">    <span class="keyword">var</span> newDate = <span class="keyword">new</span> <span class="built_in">Date</span>(translateDate);</div><div class="line">    newDate = newDate.valueOf();</div><div class="line">    newDate = newDate + num * <span class="number">24</span> * <span class="number">60</span> * <span class="number">60</span> * <span class="number">1000</span>;</div><div class="line">    newDate = <span class="keyword">new</span> <span class="built_in">Date</span>(newDate);</div><div class="line">    <span class="comment">//如果月份长度少于2，则前加 0 补位</span></div><div class="line">    <span class="keyword">if</span> ((newDate.getMonth() + <span class="number">1</span>).toString().length == <span class="number">1</span>) &#123;</div><div class="line">        monthString = <span class="number">0</span> + <span class="string">""</span> + (newDate.getMonth() + <span class="number">1</span>).toString();</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        monthString = (newDate.getMonth() + <span class="number">1</span>).toString();</div><div class="line">    &#125;</div><div class="line">    <span class="comment">//如果天数长度少于2，则前加 0 补位</span></div><div class="line">    <span class="keyword">if</span> (newDate.getDate().toString().length == <span class="number">1</span>) &#123;</div><div class="line">        dayString = <span class="number">0</span> + <span class="string">""</span> + newDate.getDate().toString();</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        dayString = newDate.getDate().toString();</div><div class="line">    &#125;</div><div class="line">    dateString = newDate.getFullYear() + <span class="string">"-"</span> + monthString + <span class="string">"-"</span> + dayString;</div><div class="line">    <span class="keyword">return</span> dateString;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">reduceByTransDate</span>(<span class="params">dateParameter, num</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> translateDate = <span class="string">""</span>, dateString = <span class="string">""</span>, monthString = <span class="string">""</span>, dayString = <span class="string">""</span>;</div><div class="line">    translateDate = dateParameter.replace(<span class="string">"-"</span>, <span class="string">"/"</span>).replace(<span class="string">"-"</span>, <span class="string">"/"</span>);</div><div class="line">    <span class="keyword">var</span> newDate = <span class="keyword">new</span> <span class="built_in">Date</span>(translateDate);</div><div class="line">    newDate = newDate.valueOf();</div><div class="line">    newDate = newDate - num * <span class="number">24</span> * <span class="number">60</span> * <span class="number">60</span> * <span class="number">1000</span>;</div><div class="line">    newDate = <span class="keyword">new</span> <span class="built_in">Date</span>(newDate);</div><div class="line">    <span class="comment">//如果月份长度少于2，则前加 0 补位</span></div><div class="line">    <span class="keyword">if</span> ((newDate.getMonth() + <span class="number">1</span>).toString().length == <span class="number">1</span>) &#123;</div><div class="line">        monthString = <span class="number">0</span> + <span class="string">""</span> + (newDate.getMonth() + <span class="number">1</span>).toString();</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        monthString = (newDate.getMonth() + <span class="number">1</span>).toString();</div><div class="line">    &#125;</div><div class="line">    <span class="comment">//如果天数长度少于2，则前加 0 补位</span></div><div class="line">    <span class="keyword">if</span> (newDate.getDate().toString().length == <span class="number">1</span>) &#123;</div><div class="line">        dayString = <span class="number">0</span> + <span class="string">""</span> + newDate.getDate().toString();</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        dayString = newDate.getDate().toString();</div><div class="line">    &#125;</div><div class="line">    dateString = newDate.getFullYear() + <span class="string">"-"</span> + monthString + <span class="string">"-"</span> + dayString;</div><div class="line">    <span class="keyword">return</span> dateString;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p><a href="http://www.cnblogs.com/carekee/articles/1678041.html" target="_blank" rel="external">http://www.cnblogs.com/carekee/articles/1678041.html</a><br>Js获取当前日期时间及其它操作</p>
@@ -444,6 +466,8 @@
     </summary>
     
     
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
   </entry>
   
   <entry>
@@ -451,7 +475,7 @@
     <link href="http://yoursite.com/2017/01/14/css-name/"/>
     <id>http://yoursite.com/2017/01/14/css-name/</id>
     <published>2017-01-14T05:57:04.000Z</published>
-    <updated>2017-07-18T03:31:57.921Z</updated>
+    <updated>2017-07-18T07:36:05.034Z</updated>
     
     <content type="html"><![CDATA[<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line">头：header</div><div class="line">内容：content/container　　</div><div class="line">尾：footer　　</div><div class="line">导航：nav　　</div><div class="line">侧栏：sidebar　　</div><div class="line">栏目：column　　</div><div class="line">页面外围控制整体佈局宽度：wrapper　　</div><div class="line">左右中：left right center　　</div><div class="line">登录条：loginbar　　</div><div class="line">标志：logo　　</div><div class="line">广告：banner　　</div><div class="line">页面主体：main　　</div><div class="line">热点：hot　　</div><div class="line">新闻：news　　</div><div class="line">下载：download　　</div><div class="line">子导航：subnav　　</div><div class="line">菜单：menu　　</div><div class="line">子菜单：submenu　　</div><div class="line">搜索：search　　</div><div class="line">友情链接：friendlink　　</div><div class="line">页脚：footer　　</div><div class="line">版权：copyright　　</div><div class="line">滚动：scroll　　</div><div class="line">内容：content　　</div><div class="line">标签：tags　　</div><div class="line">文章列表：list　　</div><div class="line">提示信息：msg　　</div><div class="line">小技巧：tips　　</div><div class="line">栏目标题：title　　</div><div class="line">加入：joinus　　</div><div class="line">指南：guide　　</div><div class="line">服务：service　　</div><div class="line">注册：regsiter　　</div><div class="line">状态：status　　</div><div class="line">投票：vote　　</div><div class="line">合作伙伴：partner　　</div><div class="line">导航：nav　　</div><div class="line">主导航：mainnav　　</div><div class="line">子导航：subnav　　</div><div class="line">顶导航：topnav　　</div><div class="line">边导航：sidebar　　</div><div class="line">左导航：leftsidebar　　</div><div class="line">右导航：rightsidebar　　</div><div class="line">菜单：menu　　</div><div class="line">子菜单：submenu　　</div><div class="line">标题: title　　</div><div class="line">摘要: summary</div></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line">宋体	SimSun</div><div class="line">黑体	SimHei</div><div class="line">微软雅黑	Microsoft YaHei</div><div class="line">微软正黑体	Microsoft JhengHei</div><div class="line">新宋体	NSimSun</div><div class="line">新细明体	PMingLiU</div><div class="line">细明体	MingLiU</div><div class="line">标楷体	DFKai-SB</div><div class="line">仿宋	FangSong</div><div class="line">楷体	KaiTi</div><div class="line">仿宋_GB2312	FangSong_GB2312</div><div class="line">楷体_GB2312	KaiTi_GB2312</div><div class="line"></div><div class="line">宋体：SimSuncss中中文字体（font-family）的英文名称</div><div class="line">Mac OS的一些：</div><div class="line">华文细黑：STHeiti Light [STXihei]</div><div class="line">华文黑体：STHeiti</div><div class="line">华文楷体：STKaiti</div><div class="line">华文宋体：STSong</div><div class="line">华文仿宋：STFangsong</div><div class="line">儷黑 Pro：LiHei Pro Medium</div><div class="line">儷宋 Pro：LiSong Pro Light</div><div class="line">標楷體：BiauKai</div><div class="line">蘋果儷中黑：Apple LiGothic Medium</div><div class="line">蘋果儷細宋：Apple LiSung Light</div><div class="line">Windows的一些：</div><div class="line">新細明體：PMingLiU</div><div class="line">細明體：MingLiU</div><div class="line">標楷體：DFKai-SB</div><div class="line">黑体：SimHei</div><div class="line">新宋体：NSimSun</div><div class="line">仿宋：FangSong</div><div class="line">楷体：KaiTi</div><div class="line">仿宋_GB2312：FangSong_GB2312</div><div class="line">楷体_GB2312：KaiTi_GB2312</div><div class="line">微軟正黑體：Microsoft JhengHei</div><div class="line">微软雅黑体：Microsoft YaHei</div><div class="line">装Office会生出来的一些：</div><div class="line">隶书：LiSu</div><div class="line">幼圆：YouYuan</div><div class="line">华文细黑：STXihei</div><div class="line">华文楷体：STKaiti</div><div class="line">华文宋体：STSong</div><div class="line">华文中宋：STZhongsong</div><div class="line">华文仿宋：STFangsong</div><div class="line">方正舒体：FZShuTi</div><div class="line">方正姚体：FZYaoti</div><div class="line">华文彩云：STCaiyun</div><div class="line">华文琥珀：STHupo</div><div class="line">华文隶书：STLiti</div><div class="line">华文行楷：STXingkai</div><div class="line">华文新魏：STXinwei</div></pre></td></tr></table></figure>]]></content>
@@ -463,6 +487,8 @@
     </summary>
     
     
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
   </entry>
   
   <entry>
@@ -470,7 +496,7 @@
     <link href="http://yoursite.com/2017/01/14/JSON/"/>
     <id>http://yoursite.com/2017/01/14/JSON/</id>
     <published>2017-01-14T02:15:12.000Z</published>
-    <updated>2017-01-14T02:21:08.527Z</updated>
+    <updated>2017-07-18T07:37:45.085Z</updated>
     
     <content type="html"><![CDATA[<h3 id="1-parse用于从一个字符串中解析出json对象-如"><a href="#1-parse用于从一个字符串中解析出json对象-如" class="headerlink" title="1.parse用于从一个字符串中解析出json对象,如"></a>1.parse用于从一个字符串中解析出json对象,如</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'&#123;"name":"huangxiaojian","age":"23"&#125;'</span></div></pre></td></tr></table></figure>
 <p>结果：</p>
@@ -487,6 +513,8 @@
     </summary>
     
     
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
   </entry>
   
   <entry>
@@ -494,7 +522,7 @@
     <link href="http://yoursite.com/2017/01/10/hello-world/"/>
     <id>http://yoursite.com/2017/01/10/hello-world/</id>
     <published>2017-01-10T06:56:23.000Z</published>
-    <updated>2017-07-18T03:26:35.056Z</updated>
+    <updated>2017-07-18T07:37:40.049Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
@@ -513,6 +541,8 @@
     
     </summary>
     
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   

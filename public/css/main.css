@@ -566,13 +566,14 @@ video {
   left: 0;
   right: 0;
   width: 100%;
-  z-index: -1;
 }
 .head,
 .main,
 .foot {
   margin: 0 auto;
   width: 700px;
+  position: relative;
+  z-index: 1;
 }
 .head,
 .foot {

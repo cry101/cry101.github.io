@@ -1,8 +1,8 @@
 ---
-title: 
-date: 
+title: about me
+date: 2017-07-30
 ---
-# about me 
+
 ------
 
 陈若尧~前端开发工程师~2015年毕业工作至今
@@ -28,8 +28,9 @@ Familiar with:
 
 know little:
 * ES6;
-* Canvas;
-* React , AngularJS;
+* React , redux;
+* AngularJS , ionic , cordova;
+* weex;
 * Sass , Less;
 * Grunt , Yeoman , Bower;
 
@@ -66,13 +67,23 @@ know little:
 * [点击查看截图](https://cry101.github.io/2017/03/15/pro-note/)
 * [目前安卓版下载地址](https://fir.im/mejd)
 
-#### 7.仿[cuberto](http://cuberto.com/)，单页面应用  2017.02 - 2017.03
+#### 7.[cuberto](http://cuberto.91elc.com)，单页面应用  2017.02 - 2017.03
+* 一个仿站，暂时没有后续使用。
 * vue全家桶。
 * 项目一些canvas星空，svg字母是从原网站copy过来的，我招了我不会。。
 * [源码地址](https://github.com/cry101/vue-cuberto)，暂时搁置。
 
+#### 8.[华闽财经官网](http://www.hmcjzx.com) 2017.04 - 2017.05
+* 主要用jquery,artTenplate,highcharts等等
+* 股票数据接口
+* 其他是一些业务逻辑
 
+#### 9.[华闽财经手机站](http://test.m.hmcjzx.com/)（测试站点） 2017.06
+* vue + vuex + vue-loader + Mint UI开发
+* 功能基于PC端
 
+#### 10.[sketchfab](https://github.com/XiaMenYuQi/sketchfab) 2017.07-
+* 3D模型网站，开发中
 
 ![跪谢](https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/1.jpg)
 跪谢看完，原谅我放荡不羁的简历。

@@ -461,6 +461,7 @@ video {
 }
 .highlight {
   overflow: auto;
+  background-color: #f8f8f8;
   color: #399c9c;
   border: 1px solid #f0f0f0;
 }

@@ -8,7 +8,7 @@ tags: project
 ------
 完成时间：2017.02 - 2017.02
 核心技术：apicloud,jquery,Aui,vue,artTemplate
-
+[目前安卓版下载地址](https://fir.im/zehf)
 ------
 ## 贴一些图好了
 ### 首页，本地存储，vue组件：

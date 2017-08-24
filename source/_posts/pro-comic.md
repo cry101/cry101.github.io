@@ -8,7 +8,7 @@ tags: project
 ------
 完成时间：2016.11 - 2016.12
 核心技术：apicloud,jquery,Aui,vue,artTemplate
-
+[目前安卓版下载地址](https://fir.im/5mgp)
 ------
 ## 贴一些图好了
 ### 首页，模板渲染，ajax等等：

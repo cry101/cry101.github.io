@@ -15,7 +15,7 @@ google_verification: false  # your token
 google_analytics: false   # your id
 
 livere_id: 'city'
-livere_uid: 'MTAyMC8yOTU4My82MTUx'
+livere_uid: false # 'MTAyMC8yOTU4My82MTUx'
 
 start_year: 2016
 
@@ -24,4 +24,6 @@ reward_images: # add your qr image
   url: '/img/wechatImage.jpg'
 - type: '支付宝' 
   url: '/img/alipayImage.jpg'
+
+article_menu: true
  

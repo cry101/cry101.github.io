@@ -7,3 +7,4 @@ yarn-error.log*
 .idea/
 .deploy_git/
 public/
+.deploy_git

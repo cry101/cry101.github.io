@@ -1,31 +1,4 @@
 @charset "utf-8";
-/*reset*/
-body, div, ul, p, h1, h2, h3, h4, ol, dl, dd, dt, form, input, textarea, select, strong, em {
-    padding: 0;
-    margin: 0;
-}
-
-* {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    font-size: 14px;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-a:focus{outline:none;}
-
 /*-------main---------*/
 .autoMenu{
 	position: fixed;
@@ -105,4 +78,14 @@ a:focus{outline:none;}
 	position: absolute;
 	left:3px;
 	top:11.5px;
+}
+
+@media screen and (max-width: 767px) {
+	.autoMenu{
+		text-align: right;
+	}
+  .autoMenu ul{
+  	display: none;
+  	text-align: left;
+  }
 }

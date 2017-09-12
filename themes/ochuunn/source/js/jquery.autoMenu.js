@@ -62,9 +62,16 @@
                         num++;
                     }
                 })
-                html += '</ul><a href="javascript:void(0);" class="btn-box">'
-                            +'<span class="icon-minus-sign"></span>'
-                        +'</a>';
+                if(window.innerWidth>767){
+                    html += '</ul><a href="javascript:void(0);" class="btn-box">'
+                        +'<span class="icon-minus-sign"></span>'
+                    +'</a>';
+                }else{
+                    html += '</ul><a href="javascript:void(0);" class="btn-box">'
+                        +'<span class="icon-plus-sign"></span>'
+                    +'</a>';
+                }
+                
                 return html;   
             },
             handleTxt: function(txt){

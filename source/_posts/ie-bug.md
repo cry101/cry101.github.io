@@ -38,3 +38,53 @@ module.exports = {
 };
 ```
 
+### 3.ie8不支持forEach
+拓展方法
+```javascript
+if ( !Array.prototype.forEach ) {
+  Array.prototype.forEach = function forEach( callback, thisArg ) {
+    var T, k;
+    if ( this == null ) {
+      throw new TypeError( "this is null or not defined" );
+    }
+    var O = Object(this);
+    var len = O.length >>> 0;
+    if ( typeof callback !== "function" ) {
+      throw new TypeError( callback + " is not a function" );
+    }
+    if ( arguments.length > 1 ) {
+      T = thisArg;
+    }
+    k = 0;
+    while( k < len ) {
+      var kValue;
+      if ( k in O ) {
+        kValue = O[ k ];
+        callback.call( T, kValue, k, O );
+      }
+      k++;
+    }
+  };
+}
+```
+
+### 4.对象不支持addEventListener属性或方法
+jquery 2.x以上版本不支持ie8
+```javascript
+//判断IE7\8 兼容性检测
+var isIE=!!window.ActiveXObject;
+var isIE6=isIE&&!window.XMLHttpRequest;
+var isIE8=isIE&&!!document.documentMode;
+var isIE7=isIE&&!isIE6&&!isIE8;
+
+if(isIE8 || isIE7){
+   li.attachEvent("onclick",function(){
+	   _marker.openInfoWindow(_iw);
+   })
+}else{
+   li.addEventListener("click",function(){
+	   _marker.openInfoWindow(_iw);
+   })
+}
+```
+

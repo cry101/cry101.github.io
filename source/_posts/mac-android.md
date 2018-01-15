@@ -3,21 +3,21 @@ title: mac下android的环境变量配置
 date: 2018-01-03 10:14:04
 tags: [mac,android]
 ---
-### [mac下android的环境变量配置](https://stackoverflow.com/questions/19986214/setting-android-home-enviromental-variable-on-mac-os-x)
+## [mac下android的环境变量配置](https://stackoverflow.com/questions/19986214/setting-android-home-enviromental-variable-on-mac-os-x)
 Where the Android-SDK is installed depends on how you installed it.
-## 1.通过官网直接下载安装
+### 1.通过官网直接下载安装
 If you downloaded the SDK through their website and then dragged/dropped the Application to your Applications folder, it's most likely here:
 ```html
 /Applications/ADT/sdk (as it is in your case).
 ```
 
-## 2.通过Homebrew安装
+### 2.通过Homebrew安装
 If you installed the SDK using Homebrew (brew cask install android-sdk), then it's located here:
 ```html
 /usr/local/Caskroom/android-sdk/{YOUR_SDK_VERSION_NUMBER}
 ```
 
-## 3.通过Android Studio安装
+### 3.通过Android Studio安装
 If the SDK was installed automatically as part of Android Studio then it's located here:
 ```html
 /Users/{YOUR_USER_NAME}/Library/Android/sdk

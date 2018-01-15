@@ -1,7 +1,7 @@
 ---
 title: js算法题
 date: 2018-01-10 17:19:16
-tags:
+tags: javascript
 ---
 
 ### 1.Remove String Spaces
@@ -183,6 +183,7 @@ return a.filter(e => b.indexOf(e)<0)
 ```
 other:
 ```javascript
+//includes判断数组是否有某元素
 function array_diff(a, b) {
   return a.filter(e => !b.includes(e));
 }
@@ -217,6 +218,7 @@ function findOdd(A) {
 ```
 better
 ```javascript
+//异或位运算符，看不懂
 const findOdd = (xs) => xs.reduce((a, b) => a ^ b);
 ```
 
@@ -253,6 +255,128 @@ const persistence = num => {
     : 0;
 }
 ```
+
+
+### 11.The Supermarket Queue
+函数有两个输入变量：
+客户：表示队列的正整数数组。每个整数表示一个客户，其值是它们需要检查的时间量。
+N：一个正整数，结账柜台的数量。
+
+函数应该返回一个整数，所需的总时间。
+result:
+```javascript
+queueTime([5,3,4], 1)
+// should return 12
+// because when n=1, the total time is just the sum of the times
+
+queueTime([10,2,3,3], 2)
+// should return 10
+// because here n=2 and the 2nd, 3rd, and 4th people in the 
+// queue finish before the 1st person has finished.
+
+queueTime([2,3,10], 2)
+// should return 12
+```
+```javascript
+function queueTime(customers, n) {
+  if(customers.length == 0) return 0;
+  let arr = customers.splice(0,n).sort((a,b)=>a-b);
+  customers.map(i=>{
+    arr[0] += i;
+    arr.sort((a,b)=>a-b)
+  })
+  return Math.max(...arr)
+}
+```
+better
+```javascript
+//不需要截第一个数组，不需要排序，直接对最小的值加
+function queueTime(customers, n) {
+  var w = new Array(n).fill(0);
+  for (let t of customers) {
+    let idx = w.indexOf(Math.min(...w));
+    w[idx] += t;
+  }
+  return Math.max(...w);
+}
+```
+
+### 12.toWeirdCase
+result:
+```javascript
+//even upper/ odd lower
+toWeirdCase( "String" );//=> returns "StRiNg"
+toWeirdCase( "Weird string case" );//=> returns "WeIrD StRiNg CaSe"
+```
+
+```javascript
+function toWeirdCase(string){
+  return string.split(' ').map(k=>
+    k.split('').map((e,i)=>i%2?e.toLowerCase():e.toUpperCase()).join('')
+  ).join(' ')
+}
+```
+better:
+```javascript
+//每匹配两个字母
+function toWeirdCase(string){
+  return string.replace(/(\w{1,2})/g,(m)=>m[0].toUpperCase()+m.slice(1))
+}
+```
+
+### 13.Handle Time
+result
+```javascript
+humanReadable(60) //rerurn '00:01:00',
+humanReadable(86399) //return '23:59:59'
+humanReadable(359999) //return '99:59:59'
+```
+
+```javascript
+function humanReadable(seconds) {
+  let zero = m => parseInt(m)<10? '0'+parseInt(m):parseInt(m);
+  if(seconds<60){
+    return `00:00:${zero(seconds)}`
+  } else if( 60<=seconds && seconds<60*60){
+    return `00:${zero(seconds/60)}:${zero(seconds%60)}`
+  } else {
+    return `${zero(seconds/60/60)}:${zero(parseInt(seconds/60)%60)}:${zero(seconds%60)}`
+  }
+}
+```
+
+```javascript
+//傻了，不用判断时间
+function humanReadable(seconds) {
+  var pad = function(x) { return (x < 10) ? "0"+x : x; }
+  return pad(parseInt(seconds / (60*60))) + ":" +
+         pad(parseInt(seconds / 60 % 60)) + ":" +
+         pad(seconds % 60)
+}
+```
+
+
+### 14.Split Strings
+result:
+```javascript
+solution('abc') // should return ['ab', 'c_']
+solution('abcdef') // should return ['ab', 'cd', 'ef']
+```
+```javascript
+//偶数次会导致末尾多个空,直接用match更好
+function solution(str){
+   return str.replace(/(\w{1,2})/g,m=>m[1]?m[0]+m[1]+'-':m[0]+'_').split('-').filter(i=>i&&i.trim())
+}
+```
+better:
+```javascript
+function solution(str){
+   return (str + "_").match(/../g);
+}
+```
+
+
+
 
 
 

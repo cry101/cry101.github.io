@@ -59,3 +59,53 @@ The value of the 'Access-Control-Allow-Origin' header in the response must not b
 
 
 ### 8.打包的时候路由模式hash
+
+
+### 9.移动端字体兼容问题
+```html
+//有兼容问题的字体图标加载顺序
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot'); /* IE9*/
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff') format('woff'), /* chrome、firefox */
+  url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+```
+
+```html
+//移动端字体图标
+@font-face {font-family: "iconfont";
+  src: url('../font/iconfont.eot'); /* IE9*/
+  src: url('../font/iconfont.svg#iconfont') format('svg'), /* iOS 4.1- */
+  url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('../font/iconfont.ttf') format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ 
+}
+```
+
+
+### 10.Cordova android emulator “cannot read property 'replace' of undefined”
+Tracked it down to file /platforms/android/cordova/lib/emulator.js line 202:
+
+var num = target.split('(API level ')1.replace(')', '');
+
+Replace it with a regex search and extraction:
+
+var num = target.match(/\d+/)[0];
+
+
+### 11.打包成app fetch用不了的情况：
+```html
+npm install whatwg-fetch --save
+//文件中引入
+import 'whatwg-fetch';
+```
+
+### 12.打包app 
+http://blog.csdn.net/fifteen718/article/details/64125953
+assetsPublicPath: './',  // 编译发布的根目录
+
+index.html 引入的外部文件按绝对路径
+<%=htmlWebpackPlugin.options.ImgHost %>static/xxx/xxx.js
+
+

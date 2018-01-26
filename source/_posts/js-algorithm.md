@@ -302,7 +302,7 @@ function queueTime(customers, n) {
 ```
 
 ### 12.toWeirdCase
-result:
+result: 大写小写大写小写
 ```javascript
 //even upper/ odd lower
 toWeirdCase( "String" );//=> returns "StRiNg"
@@ -373,6 +373,195 @@ better:
 function solution(str){
    return (str + "_").match(/../g);
 }
+```
+
+### 15.Arrays of cats and dogs
+result: Dog在n个节点内抓到Cat，return被抓的C
+```javascript
+//solve(['D','C','C','D','C'], 2) = 2, because the dog at index 0 (D0) catches C1 and D3 catches C4. 
+//solve(['C','C','D','D','C','D'], 2) = 3, because D2 catches C0, D3 catches C1 and D5 catches C4.
+//solve(['C','C','D','D','C','D'], 1) = 2, because D2 catches C1, D3 catches C4. C0 cannot be caught because n == 1.
+//solve(['D','C','D','D','C'], 1) = 2, too many dogs, so all cats get caught!
+```
+
+```javascript
+function solve(arr,n){
+ let count = 0;
+ arr.map((k,i)=>{
+   let start = i-n>0?i-n:0;
+       catchRange = arr.slice(start,i+n+1), //be catched range
+       index = catchRange.indexOf('D');//the dog index
+   if( k=='C' && index>=0){
+     count++
+     arr[index+start] = '' //the dog catch cat,let it go
+   }
+ })
+ return count;
+}
+```
+
+### 16.Dont drive too long!
+result: Drive的时间<9小时
+```javascript
+ var dailyShedule = [ ["7:00-10:30","Drive"],
+                        ["10:30-10:45","Rest"],
+                        ["10:45-11:45","Drive"],
+                        ["11:45-12:15","Rest"],
+                        ["12:15-16:45","Drive"],
+                        ["16:45-20:15","Work"]]; 
+            //-> should return false,9 hours of driving in total.
+```
+
+```javascript
+function shouldIBeTired(dailyShedule){
+  let time = 0
+  dailyShedule.map(i=>{
+    if(i[1]=="Drive"){
+      let arr = i[0].split('-');
+      time += (arr[1].split(':')[0] - arr[0].split(':')[0])+ (arr[1].split(':')[1] - arr[0].split(':')[1])/60;
+    }
+  })
+  return time>9
+}
+```
+
+### 17.Array plus array
+result:
+```javascript
+//arrayPlusArray([1, 2, 3], [4, 5, 6]), 21
+```
+
+```javascript
+function arrayPlusArray(arr1, arr2) {
+  return arr1.reduce((a,b)=>a+b) + arr2.reduce((a,b)=>a+b)
+}
+```
+better:
+```javascript
+function arrayPlusArray(arr1, arr2) {
+  return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
+}
+
+function arrayPlusArray(...arrays) {
+  return [].concat(...arrays).reduce((a,b) => a+b,0)
+}
+```
+
+### 18.order Array
+result:
+```javascript
+//"56 65 74 100 99 68 86 180 90" 
+//ordered by numbers weights becomes: "100 180 90 56 65 74 68 86 99"
+// 100->1+0+0 =1     56/65 -> '56'<'65'
+```
+
+```javascript
+function orderWeight(string) {
+    let fn = (n)=>n.split('').reduce((a,b)=>(+a)+(+b))//plus num
+    return string.split(' ').sort((a,b)=>{
+      return fn(a)==fn(b)?(a>b?1:-1):fn(a)-fn(b)
+    }).join(' ')
+}
+```
+
+### 19.Magic Squares
+result:
+判断是否是数独
+```javascript
+var arr = [
+[8, 1, 6] 
+[3, 5, 7]
+[4, 9, 2]
+];  //return true
+```
+思路：把所有情况组成个新数组
+```javascript
+function magicSquare(arr){
+  if(arr.length == 0 || arr[0] == null) return false;
+  let newArr = [...arr],
+      flag = true,
+      len = arr.length,
+      sum = arr[0].reduce((a,b)=>a+b);
+      arr[0].map((i,n)=>{
+        let item = [];
+        if(n == 0){ //X
+          let item2 = []
+          for(let j = 0; j<len; j++){
+            item2.push(arr[j][j])
+          }
+          newArr.push(item2)
+        }
+        if(n == len){ //X
+          let item3 = []
+          for(let j = 0; j<len; j++){
+            item3.push(arr[j][n-j])
+          }
+          newArr.push(item3)
+        }
+        for(let j = 0; j<len; j++){ // |||
+          item.push(arr[j][n])
+        }
+        newArr.push(item)
+      })
+      newArr.map(k=>{
+        flag = flag && sum == k.reduce((a,b)=>a+b)
+      })
+      return flag
+}
+```
+
+### 20.Sum of array singles
+result:
+```javascript
+//repeats([4,5,7,5,4,8]) = 15 
+// because only the numbers 7 and 8 occur once, and their sum is 15.
+```
+```javascript
+function repeats(arr){
+  return 2*([...new Set(arr)].reduce((a,b)=>a+b)) -  arr.reduce((a,b)=>a+b)
+}
+```
+better:
+```javascript
+//filter 索引不变代表唯一，达到筛选效果
+function repeats(arr){
+  return arr.filter(v => arr.indexOf(v) === arr.lastIndexOf(v)).reduce((a,b) => a + b, 0);
+}
+```
+
+
+### 21.Sentence Calculator
+resule:
+Lower case [a-z]: 'a'=1, 'b'=2, 'c'=3, ..., 'z'=26
+Upper case [A-Z]: 'A'=2, 'B'=4, 'C'=6, ..., 'Z'=52
+Digits [0-9] their numeric value: '0'=0, '1'=1, '2'=2, ..., '9'=9
+Other characters: 0 value
+//lettersToNumbers("I Love You"), 170
+```javascript
+ function lettersToNumbers(s) {
+   let sum = 0;
+   s.split('').map(i=>{
+     let num = i.charCodeAt();
+     if(num>64 && num<91){
+       sum += (num-64)*2
+     } else if( num>96 && num<123){
+       sum += num-96
+     } else if( num>47 && num< 58 ) {
+       sum += +i
+     }
+   })
+   return sum
+ }
+```
+better:
+```javascript
+ function lettersToNumbers(s) {
+   let key = c =>
+     /[a-z]/.test(c) ? c.charCodeAt() - 96 :
+     /[A-Z]/.test(c) ? (c.charCodeAt() - 64) * 2 :
+     /\d/.test(c) ? +c : 0
+   return [...s].reduce((s, v) => s + key(v), 0)
+ }
 ```
 
 

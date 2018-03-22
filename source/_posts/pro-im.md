@@ -25,7 +25,6 @@ tags: project
   "whatwg-fetch": "^1.0.0" //兼容fetch
 }
 ```
-* 后台管理系统： vue,vuex,vue-router,axios,elementUI
 * app端：react-native,react,redux,react-navigation
 ```javascript
 //相关依赖
@@ -56,6 +55,8 @@ tags: project
     "whatwg-fetch": "^2.0.3" //兼容fetch
   }
 ```
+* 后台管理系统： vue,vuex,vue-router,axios,elementUI
+
 
 ### 功能简介
 web端和app端公用接口，统一功能，后台管理系统多为表格。
@@ -66,37 +67,37 @@ web端和app端公用接口，统一功能，后台管理系统多为表格。
 
 ### 图片简介
 考虑到又是一个没正式上线的项目,所以截下来放点图片好了
-#### 首页社群web版：
+##### 首页社群web版：
 ![图片](https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dapaijiadao/1.jpg)
 
-#### 群详情web版：
+##### 群详情web版：
 ![图片](https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dapaijiadao/2.jpg)
 
-#### 话题群聊web版：
+##### 话题群聊web版：
 ![图片](https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dapaijiadao/3.jpg)
 
-#### 活动详情web版：
+##### 活动详情web版：
 ![图片](https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dapaijiadao/4.jpg)
 
-#### 私聊web版：
+##### 私聊web版：
 ![图片](https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dapaijiadao/5.jpg)
 
-#### 消息列表app安卓：
+##### 消息列表app安卓：
 ![图片](https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dapaijiadao/6.jpg)
 
-#### 系统消息app安卓：
+##### 系统消息app安卓：
 ![图片](https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dapaijiadao/7.jpg)
 
-#### 好友列表app ios：
+##### 好友列表app ios：
 ![图片](https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dapaijiadao/8.jpg)
 
-#### 个人中心app ios：
+##### 个人中心app ios：
 ![图片](https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dapaijiadao/9.jpg)
 
-#### 后台管理登陆：
+##### 后台管理登陆：
 ![图片](https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dapaijiadao/10.jpg)
 
-#### 后台管理某页面：
+##### 后台管理某页面：
 ![图片](https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/dapaijiadao/11.jpg)
 
 

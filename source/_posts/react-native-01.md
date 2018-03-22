@@ -222,10 +222,15 @@ android {
 最好是'/'格式 time.replace(/-/g,  "/")
 
 (2)error: Cannot add a child that doesn't have a YogaNode or parent node
-
+```javascript
 {
 	this.state.sign && <Text style={{color: Color.grey,textAlign: 'right'}}>{this.state.sign.length}/50</Text>
 }
+```
+
 发现是在 this.state.sign变空的过程中，Text销毁触发的错误？
 后改为
+```javascript
 <Text style={{color: Color.grey,textAlign: 'right'}}>{this.state.sign?this.state.sign.length: 0}/50</Text>
+
+```

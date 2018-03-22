@@ -95,7 +95,7 @@ html5开发工程师
 (8)某系统后台管理
 技术：jquery,layui,validate,ajax....
 
-#### 3.IM即使聊天 2017.09 - 2018.03
+#### 3.IM即使聊天 2017.10 - 2018.03
 (1)web端，[移动端](http://120.78.155.16:8080/) 2017.10 - 2017.12
 技术：vue,vuex,vue-router,axios,mint-ui,websocket
 

@@ -83,7 +83,7 @@ html5开发工程师
 技术：jquery,ajax,artTemplate,highcharts,validate,swiper...
 
 (5).[华闽财经手机站](http://test.m.hmcjzx.com/) 2017.07
-技术：vue + vuex + vue-loader + Mint UI开发
+技术：vue + vuex + vue-router + Mint UI开发
 
 (6).[sketchfab](http://3d.91elc.com/) 2017.08-2017.09
 负责仿站，3D模型网站
@@ -95,7 +95,8 @@ html5开发工程师
 (8)某系统后台管理
 技术：jquery,layui,validate,ajax....
 
-#### 3.IM即使聊天 2017.10 - 2018.03
+#### 3.IM即时聊天 2017.10 - 2018.03
+[简介](https://cry101.github.io/2018/03/19/pro-im/)
 (1)web端，[移动端](http://120.78.155.16:8080/) 2017.10 - 2017.12
 技术：vue,vuex,vue-router,axios,mint-ui,websocket
 

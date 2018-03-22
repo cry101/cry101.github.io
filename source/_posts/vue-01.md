@@ -1,6 +1,6 @@
 ---
 title: vue2.0中的eventBus
-date: 2018-01-26 10:40:58
+date: 2018-01-06 10:40:58
 tags: [vue,javascript]
 ---
 ### 1.定义

@@ -38,6 +38,7 @@ https://www.jianshu.com/p/5d925413c79f
 ### 6.Couldn't find preset "env" relative to directory
 https://www.cnblogs.com/ye-hcj/p/7070084.html
 
+## 弃坑，无极光推送相关插件。。
 
 ### 7.为什么app端的登陆验证需要在请求头加token
 因为传统浏览器端的登陆验证是通过cookie的值，而app使用需要后端设置跨域：
@@ -57,6 +58,7 @@ The value of the 'Access-Control-Allow-Origin' header in the response must not b
 
 所以最后的解决方案是通过把登陆校验的值放在请求头里
 
+## Cordova打包相关：
 
 ### 8.打包的时候路由模式hash
 
@@ -107,5 +109,7 @@ assetsPublicPath: './',  // 编译发布的根目录
 
 index.html 引入的外部文件按绝对路径
 <%=htmlWebpackPlugin.options.ImgHost %>static/xxx/xxx.js
+
+
 
 

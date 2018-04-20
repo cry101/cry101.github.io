@@ -211,6 +211,13 @@ android {
           abortOnError false
       }
 }
+(2) unable to process incoming event 'ProcessComplete'  <ProgressCompleteEvent>
+需要在在混淆文件android/app/proguard-rules.pro中加入：
+```javascript
+-keep class android.text {* ;}
+-dontwarn android.text.*
+```
+以上步骤还不行尝试运行 gradlew.bat assembleRelease --console plain 这个命令打包
 
 ```
 (2)Execution failed for task ':app:bundleReleaseJsAndAssets'.
@@ -234,3 +241,5 @@ android {
 <Text style={{color: Color.grey,textAlign: 'right'}}>{this.state.sign?this.state.sign.length: 0}/50</Text>
 
 ```
+(3)error: Could not expand ZIP的错误
+尝试运行cd android && gradlew clean && cd .. && react-native run-android

@@ -531,7 +531,7 @@ function repeats(arr){
 
 
 ### 21.Sentence Calculator
-resule:
+result:
 Lower case [a-z]: 'a'=1, 'b'=2, 'c'=3, ..., 'z'=26
 Upper case [A-Z]: 'A'=2, 'B'=4, 'C'=6, ..., 'Z'=52
 Digits [0-9] their numeric value: '0'=0, '1'=1, '2'=2, ..., '9'=9
@@ -564,7 +564,85 @@ better:
  }
 ```
 
+### 22.Follow that Spy
+首位相连
+Example:
+routes = [[USA, BRA], [JPN, PHL], [BRA, UAE], [UAE, JPN]]
+result: "USA, BRA, UAE, JPN, PHL"
+```javascript
+// it should return the places from the given routes
+function findRoutes(routes) {
+  //Your code here...
+  let result = [],
+      last = '';
+  (function eachRoutes(){
+    let arr = [];
+        flag = true;
+    routes.map(item => {
+      if(result.length === 0){//find first
+        routes.map(i => {
+          arr.push(i[0], i[1])
+        })
+        let noRepeat = arr.filter(j => arr.indexOf(j) === arr.lastIndexOf(j));
+        result = routes.filter(n => noRepeat.includes(n[0]))[0];
+        last = routes.filter(n => noRepeat.includes(n[1]))[0];
+      } else {
+        if(result[result.length-1] === last[1]){
+          flag = false;
+        }
+        if(item[0] === result[result.length-1]){
+          result.push(item[1])
+        }
+      }
+    })
+    if(!flag) return;
+    eachRoutes()
+  })()
+  return result.join(', ')
+}
+```
 
+
+### 23.Convert string to camel case
+result: 
+toCamelCase("the-stealth-warrior") // returns "theStealthWarrior"
+toCamelCase("The_Stealth_Warrior") // returns "TheStealthWarrior"
+
+```javascript
+function toCamelCase(str){
+  return str.split(/[-_]/g).map((i,j) => j>0? i.substr(0,1).toUpperCase() + i.substr(1): i).join('')
+}
+```
+better:
+```javascript
+function toCamelCase(str){
+  return str.replace(/[-_](.)/g, (_, c) => c.toUpperCase());
+}
+```
+
+### 24.回文数
+判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
+result:
+121，11，1221   --> true
+123   --> false
+```javascript
+var isPalindrome = function(x) {
+    let arr = String(x).split('');
+    return String(x).substr(0,parseInt(arr.length/2)) === arr.splice(Math.ceil(arr.length/2)).reverse().join('').toString()
+};
+```
+
+### 25.删除排序数组中的重复项
+result:
+[0,0,1,1,1,2,2,3,3,4] --> 原数组被修改为 0, 1, 2, 3, 4
+
+```javascript
+var removeDuplicates = function(nums) {
+    let arr = nums.slice(0); //复制原数组
+    nums.splice(0,arr.length); //清空原数组
+    nums.push(...new Set(arr)); //给原数组添加元素
+};
+```
 
 
 

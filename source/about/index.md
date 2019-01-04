@@ -22,33 +22,44 @@ Familiar with:
 * Html5, Css3, Javascript, JQuery/Zepto, Ajax;
 * Vue, Vuex, Vue-router, Axios, Weex;
 * React, Redux, React-Native, React-Navigation;
-* Bootstrap, Layui, ElementUI, Mint-ui, Aui;
+* Bootstrap, Layui, ElementUI, Mint-ui, Aui, Mui;
 * Leafletjs, ThreeJs, Echart, Ueditor, WebUploader;
 * ArtTemplate/EJS, RequireJS/SeaJS, Knockout.js;
 * Appcan, Apicloud, Html5 Hybrid App;
 * Webpack, Git, Svn;
 
 know little:
-* Nuxt.js(vue ssr)
 * AngularJS, ionic;
 * Grunt, Yeoman, Bower;
 
 ------
 ### Where do I work ?
-#### 1.厦门云之巅网络科技（2015.6-2016.5）
+#### 1.厦门云之巅信息技术有限公司（2015.07-2016.05）
 前端开发工程师
-基于Appcan开发和迭代基于中外运系统的3个Hybrid App，负责移动端页面开发，后台交互和前端逻辑处理。
+基于Appcan开发和迭代基于中外运系统的3个Hybrid App（船东版，货代版，仓储版），
+负责移动端页面开发，后台交互和前端逻辑处理。
 
-#### 2.厦门宇琦风鹭信息技术 （2016.6-2017.9） 
+#### 2.厦门市宇琦风鹭信息技术有限公司 （2016.06-2017.09） 
 html5开发工程师
-负责html5app的开发和维护，主要用apicloud，开发了宇琦财经app，漫画君/趣漫画app，一本小说app，小记app。
-负责PC和移动端网站的开发和维护，包括易旅程官网，华闽财经官网，华闽财经手机站，3D模型站点。
+基于jquery，bootStrap，swiper 开发易旅程官网/华闽财经官网；
+基于jquery，threeJs，artTemplate 开发3D模型网站；
+基于apiCloud，Aui 开发4个混合app；
+基于vue，vuex，vue-router，mint-UI开发华闽财经移动端；
 
-#### 3.厦门大牌驾到文化传媒有限公司 （2017.10-2018.3）
+#### 3.厦门大牌驾到文化传媒有限公司 （2017.10-2018.03）
 前端开发工程师
-基于vue开发一款IM即使聊天的web端，
-基于ElementUI开发后台管理，
-基于React-Native开发app端。
+基于vue，vuex，vue-router，mint-UI开发即时聊天项目的移动端；
+基于elementUI开发后台管理系统；
+基于react-native开发即时聊天项目的app端；
+
+#### 4.厦门菁川信息技术有限公司 （2018.04-2019.01）
+前端开发工程师
+基于react开发移动端项目，
+基于Ant-design-pro开发后台管理，
+基于nodeJs, express开发网站项目，
+基于mui，layui等开发公众号，
+维护KO的后台管理，
+
 
 
 ------
@@ -95,6 +106,20 @@ html5开发工程师
 (8)某系统后台管理
 技术：jquery,layui,validate,ajax....
 
+(9)react的移动端项目
+技术：react,antd-mobile,redux
+
+(10)日日结公众号
+技术：mui,layui,jquery
+
+(11)汇众支付后台管理
+技术：ant-design-pro,react,dva
+
+(12)平安不动产移动端项目
+技术：vue,vue-router
+
+
+
 #### 3.IM即时聊天 2017.10 - 2018.03
 [简介](https://cry101.github.io/2018/03/19/pro-im/)
 (1)web端，[移动端](http://120.78.155.16:8080/) 2017.10 - 2017.12
@@ -105,6 +130,9 @@ html5开发工程师
 
 (3)app端 2018.02 - 2018.03
 技术：react-native,react,redux,react-navigation
+
+
+
 
 
 

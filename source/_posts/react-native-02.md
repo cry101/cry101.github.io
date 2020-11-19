@@ -2,7 +2,9 @@
 title: react-navigation的用法
 date: 2018-02-01 14:39:50
 tags: ['react-native','react']
+categories: React
 ---
+
 (1)[官方网站](https://reactnavigation.org)
 (2)[参考资料](https://www.jianshu.com/p/2f575cc35780)
 ### 1.基本类型

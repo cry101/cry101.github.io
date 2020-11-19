@@ -8,7 +8,7 @@ tags: [javascript, videojs]
 ### 1.播放m3u8
 vue里集成：[vue-video-player](https://github.com/surmon-china/vue-video-player)
 自己引入的videojs在组件销毁时要调用dispose()方法释放下
-```vue
+```html
 <template>
     <div class="video-box">
         <video :id="id" class="video-js vjs-default-skin vjs-big-play-centered" width="100%" height="100%">

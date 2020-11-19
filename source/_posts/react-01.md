@@ -2,6 +2,7 @@
 title: redux常用中间件
 date: 2018-05-10 16:22:44
 tags: [react, redux]
+categories: React
 ---
 
 ## redux中间件配置

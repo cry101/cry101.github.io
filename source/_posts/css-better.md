@@ -2,6 +2,7 @@
 title: css的美化
 date: 2017-10-30 14:52:30
 tags: css
+categories: Css
 ---
 前言：能用css实现的效果就不用图片或者JS
 

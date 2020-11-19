@@ -2,6 +2,7 @@
 title: react的性能优化
 date: 2018-06-08 15:26:19
 tags: react
+categories: React
 ---
 
 

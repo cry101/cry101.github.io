@@ -2,6 +2,7 @@
 title: js星级评分的实现
 date: 2017-07-26 10:17:05
 tags: javascript
+categories: Javascript
 ---
 
 ### 1.第一种写法

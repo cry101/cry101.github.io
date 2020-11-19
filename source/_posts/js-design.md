@@ -2,6 +2,7 @@
 title: javascript 设计模式
 date: 2017-07-27 16:27:35
 tags: javascript
+categories: Javascript
 ---
 ### 1.模板方法模式
 定义一个操作中的算法骨架，将一些步骤延迟到子类中。

@@ -2,6 +2,7 @@
 title: js算法题
 date: 2018-01-10 17:19:16
 tags: javascript
+categories: Javascript
 ---
 
 ### 1.Remove String Spaces

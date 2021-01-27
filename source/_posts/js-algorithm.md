@@ -1,7 +1,7 @@
 ---
 title: js算法题
 date: 2018-01-10 17:19:16
-tags: javascript
+tags: [javascript, algorithm]
 ---
 
 ### 1.Remove String Spaces

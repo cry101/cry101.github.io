@@ -2,6 +2,7 @@
 title: react-native踩坑中
 date: 2018-01-29 15:19:43
 tags: ['react-native','react']
+categories: React
 ---
 
 ### 1.react相关注意点

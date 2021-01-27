@@ -1,8 +1,10 @@
 ---
-title: javascript 设计模式
+title: javascript 设计模式 - 模板方法/策略/中介者
 date: 2017-07-27 16:27:35
 tags: javascript
+categories: Javascript
 ---
+
 ### 1.模板方法模式
 定义一个操作中的算法骨架，将一些步骤延迟到子类中。
 模板方法使用继承来改变算法的一部分，而策略模式用委托来改变整个算法。
@@ -126,6 +128,7 @@ coffee.init();
 var tea = new Tea();
 tea.init();
 ```
+
 ### 2.策略模式
 定义一系列算法，一个个封装起来，并且可以相互替换。
 模式作用：
@@ -149,20 +152,23 @@ var calculateBonus = function(level,salary){
 };
 calculateBonus('S',2000);
 ```
-策略模式代码重构：
-方便代码扩展，不会使主函数越来越庞大，核心逻辑不需修改
+
 ```javascript
+/**
+* 策略模式代码重构：
+* 方便代码扩展，不会使主函数越来越庞大，核心逻辑不需修改
+*/
 var strategies = {
-    S:function(salary){
+    S(salary) {
         return salary*4;
     },
-    A:function(salary){
+    A(salary) {
         return salary*3;
     },
-    B:function(salary){
+    B(salary) {
         return salary*2;
     },
-    C:function(salary){
+    C(salary) {
         return salary*1.5;
     }
 }
@@ -171,6 +177,7 @@ var calculateBonus = function(level,salary){
 };
 calculateBonus('S',2000);
 ```
+
 ### 3.中介者模式
 用一个中介对象来封装一系列的对象交互。
 ```javascript

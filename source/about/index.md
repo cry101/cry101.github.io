@@ -60,6 +60,13 @@ html5开发工程师
 基于mui，layui等开发公众号，
 维护KO的后台管理，
 
+#### 5.厦门博海中天信息技术有限公司 （2019.01-至今）
+前端开发工程师
+基于vue，vuex，vue-router，elementUI开发智慧迎宾系统
+基于vue，vuex，vue-router，elementUI开发智能识别系统
+基于vue，mpvue，vant开发会务迎宾小程序
+基于vue，vuex开发企业迎宾公众号
+
 
 
 ------
@@ -131,10 +138,26 @@ html5开发工程师
 (3)app端 2018.02 - 2018.03
 技术：react-native,react,redux,react-navigation
 
+#### 4.智慧迎宾系统 2019.01 - 至今
+(1)云端管理平台
+技术：vue,vuex,vue-router,axios,elementUI
+功能: 角色权限，设备管理，数据同步，对接闸机
 
+(2)设备端
+技术：vue,vuex,vue-router,axios,elementUI
+功能：人脸签到，拍照上传，考勤管理，文化宣传
 
+(3)小程序端
+技术: vue，mpvue，vant
+功能：报名参加，费用支付，行程安排
 
+(4)公众号端
+技术: vue, vuex, vux
+功能: 访客预约，员工通知，人员管理
 
+(5)智能识别系统
+技术: vue,vuex,vue-router,axios,elementUI
+功能: rtmp流播放，吸烟识别告警，防拍识别告警，区域识别告警
 
 ![跪谢](https://raw.githubusercontent.com/cry101/Some-little-projects/master/image/1.jpg)
 跪谢看完，原谅我放荡不羁的简历。

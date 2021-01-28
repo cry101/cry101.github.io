@@ -57,3 +57,56 @@ const isInBST = (root, target) => {
     if (root.val > target) return isInBST(root.left, target)
 }
 ```
+
+#### 3.在BST中插入一个数
+```javascript
+/**
+* @param {TreeNode} root
+* @param {Number} val
+* @return {TreeNode}
+*/
+const insertIntoBST = (root, val) {
+    if (root === null) return new TreeNode(val)
+    if (root.val > val) {
+        root.right = insertIntoBST(root.right, val)
+    } 
+    if (root.val < val) {
+        root.left = insertIntoBST(root.left, val)
+    }
+    return root
+}
+```
+
+#### 4.在BST中删除一个数
+```javascript
+/**
+* @param {TreeNode} root
+* @param {Number} val
+* @return {TreeNode}
+*/
+const deleteNode = (root, val) {
+    if (root === null) return null
+    if (root.val === val) {
+        // 没有子节点或者只有一个子节点
+        if (root.left === null) return root.right
+        if (root.right === null) return root.left
+        // 有两个子节点 - 取右边最小来替换
+        let minNode = getMin(root.right)
+        root.val = minNode.val
+        root.right = deleteNode(root.right, minNode.val)
+    }
+    if (root.val > val) {
+        root.right = deleteNode(root.right, val)
+    } 
+    if (root.val < val) {
+        root.left = deleteNode(root.left, val)
+    }
+    return root
+}
+
+// BST的最左子树就是最小
+const getMin(node) {
+    while(node.left !== null) node = node.left
+    return node
+}
+```

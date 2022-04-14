@@ -3,6 +3,7 @@ title: algo-1
 date: 2020-01-01 17:00:47
 tags: [javascript, algorithm]
 categories: Javascript
+index_img: https://cdn.jsdelivr.net/gh/cry101/ImgHosting/img/algo.jpg
 ---
 
 ### 二叉搜索树BST

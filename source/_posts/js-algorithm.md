@@ -3,6 +3,7 @@ title: js算法题
 date: 2018-01-10 17:19:16
 tags: [javascript, algorithm]
 categories: Javascript
+index_img: https://cdn.jsdelivr.net/gh/cry101/ImgHosting/img/leetcode-02.webp
 ---
 
 ### 1.Remove String Spaces

@@ -2,6 +2,7 @@
 title: tensorFlow.js入门
 date: 2019-01-29 14:24:45
 tags: [tensorFlow]
+index_img: https://cdn.jsdelivr.net/gh/cry101/ImgHosting/img/tensorflow.jpg
 ---
 cdn地址：
 https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.9.0

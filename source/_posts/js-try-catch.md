@@ -3,6 +3,7 @@ title: try catch的理解
 date: 2019-04-29 11:14:32
 tags: javascript
 categories: Javascript
+index_img: https://cdn.jsdelivr.net/gh/cry101/ImgHosting/img/try-catch.jpg
 ---
 {% note info %}
 异常能否被try catch到？

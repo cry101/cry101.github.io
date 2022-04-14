@@ -28,7 +28,7 @@ git     ALL=(ALL)     ALL # 新增的
 ```
 然后为了方便配置下ssh，本地获取rsa公钥
 ```js
-ssh-keygen -o #没有就创建
+ssh-keygen -t rsa -f ~/.ssh/github_id_rsa #没有就创建
 
 cat ~/.ssh/id_rsa.pub  #打开本地的ssh公钥并且复制
 ```

@@ -62,37 +62,3 @@ ln -s /opt/nodejs/bin/pm2 /usr/local/bin
 # node目录可以通过查找
 whereis node
 ```
-
-### 5.nginx配置https
-
-```shell
-upstream api2 {
-    server www.domain.cn:444; # 另外的服务
-}
-
-server {
-    listen 443 ssl;
-
-    server_name  www.domain.cn; #修改为您证书绑定的域名。
-
-    ssl_certificate      cert/domain.pem; #替换成您的证书文件的路径。
-    ssl_certificate_key  cert/domain.key; #替换成您的私钥文件的路径。
-    ssl_session_cache    shared:SSL:1m;
-    ssl_session_timeout  5m;
-    ssl_ciphers  HIGH:!aNULL:!MD5; #加密套件。
-    ssl_prefer_server_ciphers  on;
-    location / {
-        root   /var/www/hexo; #站点目录。
-        index  index.html index.htm; #添加属性。
-    }
-
-    location /api/ {
-            proxy_pass https://api2/;
-            port_in_redirect   on;
-            proxy_redirect     off;
-            proxy_set_header   Host             $host;
-            proxy_set_header   X-Real-IP        $remote_addr;
-            proxy_set_header   X-Forwarded-For  $proxy_add_x_forwarded_for;
-    }
-}
-```

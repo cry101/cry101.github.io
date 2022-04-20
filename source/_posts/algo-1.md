@@ -1,5 +1,5 @@
 ---
-title: algo-1
+title: 二叉搜索树BST
 date: 2020-01-01 17:00:47
 tags: [javascript, algorithm]
 categories: Javascript

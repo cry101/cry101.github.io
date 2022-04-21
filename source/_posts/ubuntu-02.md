@@ -1,6 +1,6 @@
 ---
 title: ubuntu上配置Nodejs
-date: 2019-05-02 11:00:50
+date: 2020-05-02 11:00:50
 tags: [ubuntu, nodejs]
 categories: ubuntu
 index_img: https://cdn.jsdelivr.net/gh/cry101/ImgHosting/img/ubuntu.jpg

@@ -1,6 +1,6 @@
 ---
 title: ubuntu上配置MongoDB
-date: 2019-05-05 09:32:50
+date: 2020-05-05 09:32:50
 tags: [ubuntu, MongoDB]
 categories: ubuntu
 index_img: https://cdn.jsdelivr.net/gh/cry101/ImgHosting/img/ubuntu.jpg

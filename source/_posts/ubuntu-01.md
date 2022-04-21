@@ -1,6 +1,6 @@
 ---
 title: ubuntu上部署hexo博客
-date: 2019-05-01 21:13:34
+date: 2020-05-01 21:13:34
 tags: [ubuntu,hexo]
 categories: ubuntu
 index_img: https://cdn.jsdelivr.net/gh/cry101/ImgHosting/img/ubuntu.jpg

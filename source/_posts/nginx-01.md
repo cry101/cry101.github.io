@@ -1,6 +1,6 @@
 ---
 title: nginx配置https
-date: 2019-05-06 16:31:50
+date: 2020-05-06 16:31:50
 tags: [nginx]
 index_img: https://cdn.jsdelivr.net/gh/cry101/ImgHosting/img/nginx.jpg
 

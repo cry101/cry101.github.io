@@ -2,7 +2,7 @@
 title: videojs相关
 date: 2019-02-14 14:05:42
 tags: [javascript, videojs]
-index_img: https://cdn.jsdelivr.net/gh/cry101/ImgHosting/img/vue-video-player.jpg
+index_img: https://s2.loli.net/2022/05/20/h6RmZbEcjToYtx4.jpg
 ---
 
 

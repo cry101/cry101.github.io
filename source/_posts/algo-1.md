@@ -3,7 +3,7 @@ title: 二叉搜索树BST
 date: 2020-01-01 17:00:47
 tags: [javascript, algorithm]
 categories: Javascript
-index_img: https://cdn.jsdelivr.net/gh/cry101/ImgHosting/img/algo.jpg
+index_img: https://s2.loli.net/2022/05/20/pWuLeA9RlPafwjE.jpg
 ---
 
 ### 二叉搜索树BST

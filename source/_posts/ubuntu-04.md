@@ -3,7 +3,7 @@ title: ubuntu上安装docker
 date: 2020-05-15 09:50:38
 tags: [ubuntu, docker]
 categories: ubuntu
-index_img: https://cdn.jsdelivr.net/gh/cry101/ImgHosting/img/ubuntu.jpg
+index_img: https://s2.loli.net/2022/05/20/PdwGXOxNkHUq41L.png
 ---
 [官网教程](https://docs.docker.com/engine/install/ubuntu/)
 

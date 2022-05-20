@@ -2,7 +2,7 @@
 title: js算法题2
 date: 2019-02-28 17:23:17
 tags: [javascript, algorithm]
-index_img: https://cdn.jsdelivr.net/gh/cry101/ImgHosting/img/leetcode.jpg
+index_img: https://s2.loli.net/2022/05/20/r18pXSZjE9mYz2t.jpg
 ---
 
 

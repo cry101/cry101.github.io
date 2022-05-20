@@ -3,7 +3,7 @@ title: ubuntu上部署hexo博客
 date: 2020-05-01 21:13:34
 tags: [ubuntu,hexo]
 categories: ubuntu
-index_img: https://cdn.jsdelivr.net/gh/cry101/ImgHosting/img/ubuntu.jpg
+index_img: https://s2.loli.net/2022/05/20/PdwGXOxNkHUq41L.png
 ---
 
 ### 1.服务器配置 ubuntu

@@ -1,6 +1,6 @@
 ---
 title: js算法题2
-date: 2019-02-28 17:23:17
+date: 2019-11-28 17:23:17
 tags: [javascript, algorithm]
 index_img: https://s2.loli.net/2022/05/20/r18pXSZjE9mYz2t.jpg
 ---

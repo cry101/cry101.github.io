@@ -3,6 +3,7 @@ title: javascript 设计模式 - 单例模式
 date: 2017-08-05 15:17:25
 tags: javascript
 categories: Javascript
+index_img: https://s2.loli.net/2023/01/31/vFELgeNfIHKhD1o.webp
 ---
 
 ### 1.概念

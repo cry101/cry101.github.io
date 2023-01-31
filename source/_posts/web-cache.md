@@ -2,6 +2,7 @@
 title: 前端性能优化-缓存
 date: 2017-08-15 09:53:25
 tags: [web,cookie]
+index_img: https://s2.loli.net/2023/01/31/wfzOKhdVeFpgU1R.jpg
 ---
 ### 1.sessionStorage
 关闭页面自动回收，页面刷新不会清除，不可跨页面交互。

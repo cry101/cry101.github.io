@@ -2,6 +2,7 @@
 title: mac下android的环境变量配置
 date: 2018-01-03 10:14:04
 tags: [mac,android]
+index_img: https://s2.loli.net/2023/01/31/wfzOKhdVeFpgU1R.jpg
 ---
 ## [mac下android的环境变量配置](https://stackoverflow.com/questions/19986214/setting-android-home-enviromental-variable-on-mac-os-x)
 Where the Android-SDK is installed depends on how you installed it.

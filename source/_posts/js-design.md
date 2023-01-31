@@ -3,6 +3,7 @@ title: javascript 设计模式 - 模板方法/策略/中介者
 date: 2017-07-27 16:27:35
 tags: javascript
 categories: Javascript
+index_img: https://s2.loli.net/2023/01/31/vFELgeNfIHKhD1o.webp
 ---
 
 ### 1.模板方法模式

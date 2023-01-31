@@ -3,6 +3,7 @@ title: javascript 设计模式 - 观察者/发布订阅
 date: 2017-09-03 17:20:25
 tags: javascript
 categories: Javascript
+index_img: https://s2.loli.net/2023/01/31/vFELgeNfIHKhD1o.webp
 ---
 
 ### 1.观察者模式

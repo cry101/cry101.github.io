@@ -2,6 +2,7 @@
 title: ionic APP开发相关踩坑
 date: 2017-06-15 16:47:08
 tags: [ionic,angular,cordova]
+index_img: https://s2.loli.net/2023/01/31/wfzOKhdVeFpgU1R.jpg
 ---
 
 ### 1.配置各种环境参考资料

@@ -2,6 +2,7 @@
 title: react的高阶组件
 date: 2019-01-09 16:06:42
 tags: react
+index_img: https://s2.loli.net/2023/01/31/TuvfRonm6pywc5C.webp
 ---
 
 

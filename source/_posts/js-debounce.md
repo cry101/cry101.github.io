@@ -16,6 +16,19 @@ index_img: https://s2.loli.net/2023/01/31/vFELgeNfIHKhD1o.webp
 
 ```javascript
 // 防抖重在清零 
+function debounce(func, wait) {
+    let timeout;
+    return function () {
+        let context = this; // 保存this指向
+        let args = arguments; // 拿到event对象
+
+        clearTimeout(timeout);
+        timeout = setTimeout(function () {
+            func.apply(context, args)
+        }, wait)
+    }
+}
+
 function debounce (f, wait = 1000) {
      let timer
     return (...args) => {

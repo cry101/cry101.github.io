@@ -98,7 +98,7 @@ this.dropTable = function() {
 }
 ```
 
-### 5.localstorage
+### 5.localStorage
 优点：兼容性中等，操作简单，就是key-value形式，几乎现代的浏览器都支持。
 缺点：存在大小限制(5M)，IE9,IE10不支持。不跨浏览器，不跨域名。
 ```javascript

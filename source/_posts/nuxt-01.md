@@ -1,5 +1,5 @@
 ---
-title: vue3服务端渲染 nuxt-01
+title: vue3服务端渲染 nuxt-01问题总结
 date: 2023-03-30 10:45:57
 tags: [vue,vue3,nuxt]
 categories: Vue
@@ -41,3 +41,32 @@ definePageMeta({
 </script>
 ```
 根据页面路径设置NuxtLayout的key值，让切换路由的时候重新渲染
+
+### 2.自定义组件注入报错
+rollup-plugin-inject: failed to parse D:/Vscode Projects/video_h5/video-app/src/utils/components/Toast.vue. Consider restricting the plugin to particular files via options.include
+
+Hydration completed but contains mismatches.
+自定义组件和一些不支持ssr的组件包裹在<client-only>里
+
+
+### 3.异步请求报错
+不直接使用axios，使用useAxios，不然异步请求会报错500
+```javascript
+interface API {
+  '/list': {
+    page: number,
+    size: number
+  }
+}
+
+function requestGet<T extends keyof API>(url: T, params?: API[T]) {
+    return useAxios(url, { method: 'GET', params }, instance)
+}
+
+function requestPost<T extends keyof API>(url: T, data?: API[T]) {
+    return useAxios(url, { method: 'POST', data  }, instance)
+}
+```
+
+### 4.路由对应的页面需要一个根元素
+路由对应的页面需要一个根元素 —— 虽然 Vue3 支持多个根元素，但在 Nuxt3 里面，如果进入多根元素页面，再跳转去其他页面，会导致页面空白

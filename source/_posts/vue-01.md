@@ -3,7 +3,7 @@ title: vue2.0中的eventBus
 date: 2018-01-06 10:40:58
 tags: [vue,javascript]
 categories: Vue
-index_img: https://s2.loli.net/2022/05/20/5OZkfSFymzH3cKL.jpg
+index_img: /img/cover/3.webp
 ---
 ### 1.定义
 主要是在要相互通信的兄弟组件之中，都引入一个新的vue实例，然后通过分别调用这个实例的事件触发和监听来实现通信和参数传递。

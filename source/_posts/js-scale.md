@@ -3,7 +3,7 @@ title: js用scale自适应缩放大屏
 date: 2021-08-03 15:06:46
 tags: javascript
 categories: Javascript
-index_img: https://s2.loli.net/2023/02/03/xBwu8iUjhY5PRXO.png
+index_img: /img/cover/10.jpeg
 ---
 
 ### js用scale自适应缩放大屏

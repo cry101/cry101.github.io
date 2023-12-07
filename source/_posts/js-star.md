@@ -3,7 +3,7 @@ title: js星级评分的实现
 date: 2017-07-26 10:17:05
 tags: javascript
 categories: Javascript
-index_img: https://s2.loli.net/2023/01/31/vFELgeNfIHKhD1o.webp
+index_img: /img/cover/0f7ab95b.webp
 ---
 
 ### 1.第一种写法

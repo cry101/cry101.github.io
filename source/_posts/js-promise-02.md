@@ -3,7 +3,7 @@ title: promise相关实现
 date: 2019-08-20 15:30:33
 tags: [js, es6]
 categories: Javascript
-index_img: https://s2.loli.net/2023/01/31/vFELgeNfIHKhD1o.webp
+index_img: /img/cover/12.png
 ---
 
 

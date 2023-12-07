@@ -3,7 +3,7 @@ title: js算法题
 date: 2019-09-10 17:19:16
 tags: [javascript, algorithm]
 categories: Javascript
-index_img: https://s2.loli.net/2022/05/20/lSX49YkgytcJMRp.jpg
+index_img: /img/cover/0f7ab95b.webp
 ---
 
 ### 1.Remove String Spaces

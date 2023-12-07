@@ -2,7 +2,7 @@
 title: weex小记
 date: 2017-12-27 17:10:25
 tags: [vue,weex]
-index_img: https://s2.loli.net/2023/01/31/wfzOKhdVeFpgU1R.jpg
+index_img: /img/cover/other.jpg
 ---
 ### 1.weex和浏览器的差异
 （1）weex中不存在window对象

@@ -2,7 +2,7 @@
 title: jQuery源码浅析
 date: 2017-10-28 08:22:47
 tags: [jQuery,javascript]
-index_img: https://s2.loli.net/2023/01/31/vFELgeNfIHKhD1o.webp
+index_img: /img/cover/js.png
 ---
 
 ### 1.jQuery闭包结构

@@ -3,7 +3,7 @@ title: css的美化
 date: 2017-10-30 14:52:30
 tags: css
 categories: Css
-index_img: https://s2.loli.net/2023/01/31/CDSapH23zZsWwE5.jpg
+index_img: /img/cover/css3.jpg
 ---
 前言：能用css实现的效果就不用图片或者JS
 

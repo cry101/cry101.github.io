@@ -3,7 +3,7 @@ title: ubuntu上配置Nodejs
 date: 2020-05-02 11:00:50
 tags: [ubuntu, nodejs]
 categories: ubuntu
-index_img: https://s2.loli.net/2022/05/20/PdwGXOxNkHUq41L.png
+index_img: /img/cover/aptq1-jpoq3.png
 ---
 
 ### 1.下载nodejs的二进制文件

@@ -2,7 +2,7 @@
 title: 基于canvas获取video的封面
 date: 2020-02-21 15:38:21
 tags: [js, canvas]
-index_img: https://s2.loli.net/2022/05/20/XKZuN9tTovqnBMk.jpg
+index_img: /img/cover/awc1w-ex1wq.jpg
 ---
 
 ### 1.获取视频第一帧为封面

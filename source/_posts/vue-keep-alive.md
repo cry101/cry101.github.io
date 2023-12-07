@@ -4,7 +4,7 @@ date: 2021-04-22 11:49:30
 tags: vue
 categories: Vue
 excerpt: 需求：有个活动列表A界面，打开活动B界面，B界面操作不少，还可以跳转打卡C界面，需要缓存B界面。A => B，B => C，C => B需要缓存，B => A 返回取消缓存。
-index_img: https://s2.loli.net/2022/05/20/5OZkfSFymzH3cKL.jpg
+index_img: /img/cover/3.webp
 ---
 
 {% note info %}

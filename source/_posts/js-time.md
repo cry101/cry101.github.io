@@ -2,7 +2,7 @@
 title: 关于时间的JS
 date: 2017-01-16 17:52:20
 tags: javascript
-index_img: https://s2.loli.net/2023/01/31/vFELgeNfIHKhD1o.webp
+index_img: /img/cover/0f7ab95b.webp
 ---
 
 时间函数加减 2015-10-23 

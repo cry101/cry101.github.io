@@ -3,7 +3,7 @@ title: 移动端适配方案
 date: 2018-08-28 10:22:32
 tags: css
 categories: Css
-index_img: https://s2.loli.net/2023/01/31/CDSapH23zZsWwE5.jpg
+index_img: /img/cover/10.jpeg
 ---
 
 

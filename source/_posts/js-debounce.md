@@ -3,7 +3,7 @@ title: 防抖和节流
 date: 2017-05-05 11:06:01
 tags: javascript
 categories: Javascript
-index_img: https://s2.loli.net/2023/01/31/vFELgeNfIHKhD1o.webp
+index_img: /img/cover/0f7ab95b.webp
 ---
 
 ### 1.防抖

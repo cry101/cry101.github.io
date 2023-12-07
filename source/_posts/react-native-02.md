@@ -3,7 +3,7 @@ title: react-navigation的用法
 date: 2018-02-01 14:39:50
 tags: ['react-native','react']
 categories: React
-index_img: https://s2.loli.net/2023/01/31/SiEkAK6U1N74Zmt.png
+index_img: /img/cover/rn.png
 ---
 
 (1)[官方网站](https://reactnavigation.org)

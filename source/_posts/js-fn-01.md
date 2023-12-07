@@ -3,7 +3,7 @@ title: js函数递归调用与数组全排列
 date: 2018-10-22 15:03:09
 tags: javascript
 categories: Javascript
-index_img: https://s2.loli.net/2023/01/31/vFELgeNfIHKhD1o.webp
+index_img: /img/cover/0f7ab95b.webp
 ---
 
 ### 1.递归的定义

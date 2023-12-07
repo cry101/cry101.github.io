@@ -3,7 +3,7 @@ title: js的call、apply、bind的区别
 date: 2020-07-17 14:15:13
 tags: javascript
 categories: Javascript
-index_img: https://s2.loli.net/2023/02/03/kvmhbc2gwsYTPzG.webp
+index_img: /img/cover/0f7ab95b.webp
 ---
 
 ### 1.call

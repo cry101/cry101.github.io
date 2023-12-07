@@ -2,7 +2,7 @@
 title: nginx配置https
 date: 2020-05-06 16:31:50
 tags: [nginx]
-index_img: https://s2.loli.net/2022/05/20/PLfaJmwn2YxvuoA.jpg
+index_img: /img/cover/apoo5-k8qk1.jpg
 ---
 
 ### 1.nginx配置https

@@ -2,7 +2,7 @@
 title: 关于canvas绘制图片预加载
 date: 2019-01-28 11:39:50
 tags: [js, canvas]
-index_img: https://s2.loli.net/2022/05/20/XKZuN9tTovqnBMk.jpg
+index_img: /img/cover/audb8-vwdgg.jpg
 ---
 
 ### 1.image的onload

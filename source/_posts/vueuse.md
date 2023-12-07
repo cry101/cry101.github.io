@@ -2,7 +2,7 @@
 title: vueuse-基于 Composition API 的实用函数集合
 date: 2022-08-15 16:53:49
 tags: [vue]
-index_img: https://s2.loli.net/2023/02/03/tz5OefcMlsLQb1v.jpg
+index_img: /img/cover/vue-use.jpg
 ---
 
 ### 1.官网地址

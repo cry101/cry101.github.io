@@ -3,7 +3,7 @@ title: redux常用中间件
 date: 2018-05-10 16:22:44
 tags: [react, redux]
 categories: React
-index_img: https://s2.loli.net/2023/01/31/TuvfRonm6pywc5C.webp
+index_img: /img/cover/react.jpg
 ---
 
 ## redux中间件配置

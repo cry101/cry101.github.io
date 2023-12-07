@@ -3,7 +3,7 @@ title: css命名和字体名称
 date: 2017-01-14 13:57:04
 tags: css
 categories: Css
-index_img: https://s2.loli.net/2023/01/31/CDSapH23zZsWwE5.jpg
+index_img: /img/cover/css3.jpg
 ---
 
 ``` html

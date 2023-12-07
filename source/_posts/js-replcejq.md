@@ -3,7 +3,7 @@ title: 用js替换jQuery
 date: 2017-04-18 10:56:11
 tags: [javascript,jQuery]
 categories: Javascript
-index_img: https://s2.loli.net/2023/01/31/vFELgeNfIHKhD1o.webp
+index_img: /img/cover/0f7ab95b.webp
 ---
 
 ### 1.获取元素

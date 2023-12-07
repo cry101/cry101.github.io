@@ -3,7 +3,7 @@ title: vue3服务端渲染 nuxt-01问题总结
 date: 2023-03-30 10:45:57
 tags: [vue,vue3,nuxt]
 categories: Vue
-index_img: https://s2.loli.net/2023/02/10/S6hfmUQCxEWwIyH.jpg
+index_img: /img/cover/nuxt.png
 ---
 
 ### 1.动态设置layout后，切换报错
@@ -33,7 +33,8 @@ definePageMeta({
     </Html>
     <!--important-->
     <NuxtLayout :key="$route.fullPath">
-      <NuxtPage></NuxtPage>
+      <NuxtLoadingIndicator />
+      <NuxtPage :key="$route.fullPath"></NuxtPage>
     </NuxtLayout>
   </div>
 </template>

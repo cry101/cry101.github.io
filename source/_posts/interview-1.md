@@ -3,7 +3,7 @@ title: 前端面试题-1
 date: 2017-08-29 15:29:14
 tags: javascript
 categories: Interview
-index_img: https://s2.loli.net/2023/01/31/vFELgeNfIHKhD1o.webp
+index_img: /img/cover/11.png
 ---
 ### 1.js的数据类型相关
 (1)基本数据类型

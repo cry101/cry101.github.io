@@ -3,7 +3,7 @@ title: react-native踩坑中
 date: 2018-01-29 15:19:43
 tags: ['react-native','react']
 categories: React
-index_img: https://s2.loli.net/2023/01/31/SiEkAK6U1N74Zmt.png
+index_img: /img/cover/rn.png
 ---
 
 ### 1.react相关注意点

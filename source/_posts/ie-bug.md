@@ -2,7 +2,7 @@
 title: ie下相关兼容性问题
 date: 2017-10-09 15:21:42
 tags: [javascript,ie]
-index_img: https://s2.loli.net/2023/01/31/wfzOKhdVeFpgU1R.jpg
+index_img: /img/cover/10.jpeg
 ---
 [CAN I USE](http://caniuse.com/)
 ### 1.Invalid Date,new Date()时间格式不对

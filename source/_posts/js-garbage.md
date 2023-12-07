@@ -3,7 +3,7 @@ title: js的内存泄漏
 date: 2020-09-02 16:02:26
 tags: javascript
 categories: Javascript
-index_img: https://s2.loli.net/2023/01/31/wfzOKhdVeFpgU1R.jpg
+index_img: /img/cover/0f7ab95b.webp
 ---
 
 ### 内存泄漏的情况

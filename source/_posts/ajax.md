@@ -2,7 +2,7 @@
 title: ajax的一些小技巧
 date: 2017-02-16 17:32:19
 tags: ajax
-index_img: https://s2.loli.net/2023/01/31/wfzOKhdVeFpgU1R.jpg
+index_img: /img/cover/other.jpg
 ---
 
 ### 1.利用html5 formData实现ajax上传文件

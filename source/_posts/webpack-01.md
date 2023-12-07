@@ -3,7 +3,7 @@ title: create-react-app中配置webpack
 date: 2018-04-20 09:47:04
 tags: ['webpack','react']
 categories: React
-index_img: https://s2.loli.net/2023/01/31/TuvfRonm6pywc5C.webp
+index_img: /img/cover/react.jpg
 ---
 
 [Create React App](https://github.com/facebook/create-react-app)（以下简称 CRA）是创建 React 应用的一个脚手架，它与其他脚手架不同的一个地方就是将一些复杂工具（比如 webpack）的配置封装了起来，让使用者不用关心这些工具的具体配置，从而降低了工具的使用难度。

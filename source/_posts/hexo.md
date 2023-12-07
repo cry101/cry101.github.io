@@ -2,7 +2,7 @@
 title: hexo基本用法
 date: 2017-01-01 14:30:30
 tags: hexo
-index_img: https://s2.loli.net/2023/01/31/wfzOKhdVeFpgU1R.jpg
+index_img: /img/cover/other.jpg
 ---
 
 ### 1.基础操作

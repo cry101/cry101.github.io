@@ -3,7 +3,7 @@ title: vue中watch的用法
 date: 2019-01-19 14:41:00
 tags: vue
 categories: Vue
-index_img: https://s2.loli.net/2022/05/20/5OZkfSFymzH3cKL.jpg
+index_img: /img/cover/3.webp
 ---
 
 ### 1.immediate属性

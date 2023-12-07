@@ -3,7 +3,7 @@ title: react和vue的比较
 date: 2018-03-26 17:27:45
 tags: [react, vue, jquery]
 categories: React
-index_img: https://s2.loli.net/2023/01/31/TuvfRonm6pywc5C.webp
+index_img: /img/cover/7.jpg
 ---
 
 

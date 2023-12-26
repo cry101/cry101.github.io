@@ -1,6 +1,6 @@
 ---
-title: js-utils
-date: 2023-12-08 14:21:39
+title: javascript常用工具类
+date: 2022-11-08 14:21:39
 tags: javascript
 categories: Javascript
 index_img: /img/cover/0f7ab95b.webp

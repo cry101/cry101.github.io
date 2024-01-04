@@ -71,3 +71,7 @@ function requestPost<T extends keyof API>(url: T, data?: API[T]) {
 
 ### 4.路由对应的页面需要一个根元素
 路由对应的页面需要一个根元素 —— 虽然 Vue3 支持多个根元素，但在 Nuxt3 里面，如果进入多根元素页面，再跳转去其他页面，会导致页面空白
+
+### 5.Nuxt instance unavailable
+通常发生在尝试访问Nuxt的示例之前，它已经被创建或之后，它已经被销毁。这个错误可能发生在尝试访问Nuxt的上下文或插件从外面的Nuxt的生命周期挂钩。
+常见于没有在setup里使用hooks，比如说在utils的request请求里，使用useApp,useRuntimeConfig等获取配置

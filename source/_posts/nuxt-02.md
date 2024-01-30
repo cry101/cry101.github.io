@@ -82,6 +82,7 @@ VUE_APP_BASEURL = 'https://www.blockxu.top'
 运行后，在服务器上，通过process.env.VUE_APP_VALUE就可以获取到对应的变量，但是客户端获取不到，而且build后，不论在客户端还是服务端，都无法获取到process.env
 
 - 通过vite的define解决
+但是这个define是在vite打包阶段，所以该环境变量是固定的，如果后续需要pm2传入env，则是无效的
 ```javascript
 let define = {};
 // 处理process.env以便在客户端能够取到
@@ -97,4 +98,36 @@ export default defineNuxtConfig({
   }
 })
 
+```
+
+### 4.pm2启动时传环境变量
+- 启动命令 pm2 start ecosystem.config.js --env pro
+```javascript
+// ecosystem.config.js
+module.exports = {
+    apps: [
+      {
+        name: 'tiandaoedu-app',
+        port: '3001',
+        instances: '1',
+        script: '/home/h5/download/app/.output/server/index.mjs',
+        env_pro: {
+          NUXT_PUBLIC_NAME: '天道下载站',
+          NUXT_PUBLIC_API_BASE: 'http://api.tiandaoedu.cn/admin',
+          NUXT_PUBLIC_WEBSIZE: 'http://tiandaoedu.cn'
+        }
+      },
+      {
+        name: 'tiandaoedu-pc',
+        port: '3002',
+        instances: '1',
+        script: '/home/h5/download/pc/.output/server/index.mjs',
+        env_pro: {
+          NUXT_PUBLIC_NAME: '天道下载站',
+          NUXT_PUBLIC_API_BASE: 'http://api.tiandaoedu.cn/admin',
+          NUXT_PUBLIC_WEBSIZE: 'http://m.tiandaoedu.cn'
+        }
+      }
+    ]
+}
 ```

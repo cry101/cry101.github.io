@@ -1,5 +1,5 @@
 ---
-title: nuxt-03 重写路由或自定义路由的两种方案
+title: nuxt3-03 重写路由或自定义路由的两种方案
 date: 2023-05-30 15:07:12
 tags: [vue,vue3,nuxt]
 categories: Vue

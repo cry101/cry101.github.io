@@ -1,5 +1,5 @@
 ---
-title: vue3服务端渲染 nuxt-01问题总结
+title: nuxt3-01 vue3服务端渲染问题总结
 date: 2023-03-30 10:45:57
 tags: [vue,vue3,nuxt]
 categories: Vue

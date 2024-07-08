@@ -1,5 +1,5 @@
 ---
-title: nuxt3 环境变量配置
+title: nuxt3-02 环境变量配置
 date: 2023-04-04 10:18:32
 tags: [vue,vue3,nuxt]
 categories: Vue
